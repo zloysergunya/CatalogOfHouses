@@ -4,12 +4,19 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="CatalogOfHouses" customModuleProvider="target">
             <connections>
+                <outlet property="regionsTable" destination="YVX-zj-BDN" id="Twg-DE-Kdz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +24,198 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="icL-qW-6iv" customClass="RoundField" customModule="CatalogOfHouses" customModuleProvider="target">
+                    <rect key="frame" x="16" y="60" width="382" height="34"/>
+                    <color key="backgroundColor" name="grayMainColor"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="magnifyingglass" catalog="system"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaS-u4-vGn">
+                    <rect key="frame" x="0.0" y="110" width="414" height="1"/>
+                    <color key="backgroundColor" name="grayMainColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Yzb-6O-CyT"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-Fy-O8S">
+                    <rect key="frame" x="16" y="127" width="382" height="112"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmQ-AN-NNi" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="52"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="5D3-9n-hbT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="15"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Общая площадь">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="darkMainColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p66-Af-lF0" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="60" width="382" height="52"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="mua-BS-W1o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="10 200 кв.м.">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="darkMainColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR7-0n-u6X" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="112" width="382" height="52"/>
+                            <color key="backgroundColor" name="grayMainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="hId-Me-Zs2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="18"/>
+                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Нижегородская область">
+                                <color key="titleColor" name="orangeMainColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXI-Zw-Spw">
+                    <rect key="frame" x="0.0" y="271" width="414" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регионы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-uA-YbY">
+                            <rect key="frame" x="32" y="16" width="72.5" height="21.5"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKk-tV-uvg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" name="grayMainColor"/>
+                            <color key="tintColor" name="grayMainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="uz0-49-KFd"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aW5-c7-dsQ">
+                            <rect key="frame" x="0.0" y="54" width="414" height="1"/>
+                            <color key="backgroundColor" name="orangeMainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="3UV-to-Oo7"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syo-nU-ECJ">
+                            <rect key="frame" x="362" y="18.5" width="20" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="BYz-TB-ySe"/>
+                                <constraint firstAttribute="height" constant="17" id="sMs-IQ-G87"/>
+                            </constraints>
+                            <color key="tintColor" name="orangeMainColor"/>
+                            <state key="normal" image="slider.horizontal.3" catalog="system"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OKk-tV-uvg" firstAttribute="top" secondItem="sXI-Zw-Spw" secondAttribute="top" id="9sm-iU-q3t"/>
+                        <constraint firstItem="4Gg-uA-YbY" firstAttribute="leading" secondItem="sXI-Zw-Spw" secondAttribute="leading" constant="32" id="A4N-Wt-tNw"/>
+                        <constraint firstItem="OKk-tV-uvg" firstAttribute="leading" secondItem="sXI-Zw-Spw" secondAttribute="leading" id="Fdw-p7-1v5"/>
+                        <constraint firstItem="syo-nU-ECJ" firstAttribute="centerY" secondItem="4Gg-uA-YbY" secondAttribute="centerY" id="H4D-oM-gk0"/>
+                        <constraint firstAttribute="trailing" secondItem="OKk-tV-uvg" secondAttribute="trailing" id="OLF-CA-3op"/>
+                        <constraint firstAttribute="trailing" secondItem="aW5-c7-dsQ" secondAttribute="trailing" id="S5K-mX-cFy"/>
+                        <constraint firstAttribute="height" constant="55" id="UZ5-Cr-di9"/>
+                        <constraint firstItem="aW5-c7-dsQ" firstAttribute="leading" secondItem="sXI-Zw-Spw" secondAttribute="leading" id="XbF-fl-abY"/>
+                        <constraint firstAttribute="trailing" secondItem="syo-nU-ECJ" secondAttribute="trailing" constant="32" id="Zdc-Gl-I2G"/>
+                        <constraint firstItem="4Gg-uA-YbY" firstAttribute="top" secondItem="OKk-tV-uvg" secondAttribute="bottom" constant="15" id="oBq-Od-mj1"/>
+                        <constraint firstItem="aW5-c7-dsQ" firstAttribute="top" secondItem="4Gg-uA-YbY" secondAttribute="bottom" constant="16.5" id="oUA-4C-qAw"/>
+                        <constraint firstAttribute="bottom" secondItem="aW5-c7-dsQ" secondAttribute="bottom" id="u1g-W5-Fkl"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YVX-zj-BDN">
+                    <rect key="frame" x="0.0" y="326" width="414" height="570"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
-            <point key="canvasLocation" x="139" y="90"/>
+            <color key="backgroundColor" name="blackMainColor"/>
+            <constraints>
+                <constraint firstItem="sXI-Zw-Spw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="59W-B3-Diw"/>
+                <constraint firstItem="icL-qW-6iv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ADg-yY-H8L"/>
+                <constraint firstAttribute="trailing" secondItem="YVX-zj-BDN" secondAttribute="trailing" id="E4n-sU-OJ3"/>
+                <constraint firstItem="sXI-Zw-Spw" firstAttribute="top" secondItem="Ugp-Fy-O8S" secondAttribute="bottom" constant="32" id="HIS-da-oVo"/>
+                <constraint firstItem="YVX-zj-BDN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hqk-DO-8hF"/>
+                <constraint firstAttribute="bottom" secondItem="YVX-zj-BDN" secondAttribute="bottom" id="LA5-aA-eve"/>
+                <constraint firstItem="BaS-u4-vGn" firstAttribute="top" secondItem="icL-qW-6iv" secondAttribute="bottom" constant="16" id="NcG-5g-Vob"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ugp-Fy-O8S" secondAttribute="trailing" constant="16" id="SuE-OO-ug2"/>
+                <constraint firstItem="Ugp-Fy-O8S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZQb-Ax-Kor"/>
+                <constraint firstItem="Ugp-Fy-O8S" firstAttribute="top" secondItem="BaS-u4-vGn" secondAttribute="bottom" constant="16" id="d9U-pP-JtP"/>
+                <constraint firstItem="YVX-zj-BDN" firstAttribute="top" secondItem="sXI-Zw-Spw" secondAttribute="bottom" id="hls-5q-8hn"/>
+                <constraint firstItem="BaS-u4-vGn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iop-06-WvF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="icL-qW-6iv" secondAttribute="trailing" constant="16" id="jW6-bK-wNw"/>
+                <constraint firstItem="icL-qW-6iv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="obz-N0-iLZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BaS-u4-vGn" secondAttribute="trailing" id="pD4-LH-a1W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sXI-Zw-Spw" secondAttribute="trailing" id="r06-Df-4xr"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </view>
     </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <namedColor name="blackMainColor">
+            <color red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkMainColor">
+            <color red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayMainColor">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orangeMainColor">
+            <color red="0.9137254901960784" green="0.64313725490196072" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

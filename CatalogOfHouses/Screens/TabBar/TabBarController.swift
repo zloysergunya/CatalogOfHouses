@@ -16,9 +16,16 @@ class TabBarController: UITabBarController {
     
     private func setupUI() {
         let mainVC = MainVC(nibName: "MainVC", bundle: nil)
-        mainVC.tabBarItem = UITabBarItem.init(title: "Главная", image: UIImage.init(systemName: "square.grid.2x2"), tag: 0)
-        tabBarController?.tabBar.barTintColor = .blue
-        viewControllers = [mainVC]
+        mainVC.tabBarItem.title = "Главная"
+        mainVC.tabBarItem.image = UIImage.init(systemName: "square.grid.2x2")?.withTintColor(.white)
+        mainVC.tabBarItem.selectedImage = UIImage.init(systemName: "square.grid.2x2")?.withTintColor(.yellow)
+        
+        let aboutAppVC = AboutAppVC(nibName: "AboutAppVC", bundle: nil)
+        aboutAppVC.tabBarItem.title = "Описание"
+        aboutAppVC.tabBarItem.image = UIImage.init(systemName: "line.horizontal.3")?.withTintColor(.white)
+//        self.tabBar.barTintColor = UIColor(hex: "#707070")
+//        self.tabBar.alpha = 0.5
+        viewControllers = [mainVC, aboutAppVC]
     }
 
 }

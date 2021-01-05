@@ -14,6 +14,20 @@
 		C40C645D25A42CCA00AF6CEA /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40C645B25A42CCA00AF6CEA /* TabBarController.xib */; };
 		C40C646225A42D0200AF6CEA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C646025A42D0200AF6CEA /* MainVC.swift */; };
 		C40C646325A42D0200AF6CEA /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40C646125A42D0200AF6CEA /* MainVC.xib */; };
+		C4BA0E2425A4313000E42008 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA0E2325A4313000E42008 /* UIColor.swift */; };
+		C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA0E2725A4337800E42008 /* IBDesignable.swift */; };
+		C4BA0E3325A4350400E42008 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E2B25A4350400E42008 /* SF-Pro-Display-Light.otf */; };
+		C4BA0E3425A4350400E42008 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E2C25A4350400E42008 /* SF-Pro-Display-Regular.otf */; };
+		C4BA0E3525A4350400E42008 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E2D25A4350400E42008 /* SF-Pro-Display-Bold.otf */; };
+		C4BA0E3625A4350400E42008 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E2E25A4350400E42008 /* SF-Pro-Display-Medium.otf */; };
+		C4BA0E3725A4350400E42008 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E2F25A4350400E42008 /* SF-Pro-Display-Heavy.otf */; };
+		C4BA0E3825A4350400E42008 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E3025A4350400E42008 /* SF-Pro-Display-Semibold.otf */; };
+		C4BA0E3925A4350400E42008 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E3125A4350400E42008 /* SF-Pro-Text-Regular.otf */; };
+		C4BA0E3A25A4350400E42008 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E3225A4350400E42008 /* SF-Pro-Text-Semibold.otf */; };
+		C4BA0E3F25A43A8700E42008 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA0E3D25A43A8700E42008 /* MainCell.swift */; };
+		C4BA0E4025A43A8700E42008 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E3E25A43A8700E42008 /* MainCell.xib */; };
+		C4BA0E4625A43EE400E42008 /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA0E4425A43EE400E42008 /* AboutAppVC.swift */; };
+		C4BA0E4725A43EE400E42008 /* AboutAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E4525A43EE400E42008 /* AboutAppVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +40,20 @@
 		C40C645B25A42CCA00AF6CEA /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 		C40C646025A42D0200AF6CEA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C40C646125A42D0200AF6CEA /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		C4BA0E2325A4313000E42008 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C4BA0E2725A4337800E42008 /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
+		C4BA0E2B25A4350400E42008 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		C4BA0E2C25A4350400E42008 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		C4BA0E2D25A4350400E42008 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		C4BA0E2E25A4350400E42008 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		C4BA0E2F25A4350400E42008 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		C4BA0E3025A4350400E42008 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		C4BA0E3125A4350400E42008 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		C4BA0E3225A4350400E42008 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		C4BA0E3D25A43A8700E42008 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		C4BA0E3E25A43A8700E42008 /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		C4BA0E4425A43EE400E42008 /* AboutAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppVC.swift; sourceTree = "<group>"; };
+		C4BA0E4525A43EE400E42008 /* AboutAppVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutAppVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				C40C644825A42BE800AF6CEA /* Info.plist */,
-				C40C645525A42C5B00AF6CEA /* App */,
+				C40C643A25A42BE600AF6CEA /* AppDelegate.swift */,
+				C40C644325A42BE800AF6CEA /* Assets.xcassets */,
+				C4BA0E1F25A430A200E42008 /* Helpers */,
 				C40C645125A42C3F00AF6CEA /* Models */,
 				C40C645225A42C4A00AF6CEA /* Screens */,
 			);
@@ -76,6 +106,7 @@
 		C40C645225A42C4A00AF6CEA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C4BA0E4325A43ED000E42008 /* AboutApp */,
 				C40C645925A42C8D00AF6CEA /* TabBar */,
 				C40C645825A42C8600AF6CEA /* Main */,
 				C40C645725A42C7400AF6CEA /* PinCode */,
@@ -91,15 +122,6 @@
 				C40C644525A42BE800AF6CEA /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
-			sourceTree = "<group>";
-		};
-		C40C645525A42C5B00AF6CEA /* App */ = {
-			isa = PBXGroup;
-			children = (
-				C40C643A25A42BE600AF6CEA /* AppDelegate.swift */,
-				C40C644325A42BE800AF6CEA /* Assets.xcassets */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		C40C645625A42C7000AF6CEA /* Auth */ = {
@@ -119,6 +141,7 @@
 		C40C645825A42C8600AF6CEA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C4BA0E3C25A43A5B00E42008 /* Cells */,
 				C40C646025A42D0200AF6CEA /* MainVC.swift */,
 				C40C646125A42D0200AF6CEA /* MainVC.xib */,
 			);
@@ -132,6 +155,65 @@
 				C40C645B25A42CCA00AF6CEA /* TabBarController.xib */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C4BA0E1F25A430A200E42008 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA0E2A25A4350400E42008 /* Fonts */,
+				C4BA0E2625A4336A00E42008 /* UI Items */,
+				C4BA0E2025A430AC00E42008 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C4BA0E2025A430AC00E42008 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA0E2325A4313000E42008 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4BA0E2625A4336A00E42008 /* UI Items */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA0E2725A4337800E42008 /* IBDesignable.swift */,
+			);
+			path = "UI Items";
+			sourceTree = "<group>";
+		};
+		C4BA0E2A25A4350400E42008 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA0E2B25A4350400E42008 /* SF-Pro-Display-Light.otf */,
+				C4BA0E2C25A4350400E42008 /* SF-Pro-Display-Regular.otf */,
+				C4BA0E2D25A4350400E42008 /* SF-Pro-Display-Bold.otf */,
+				C4BA0E2E25A4350400E42008 /* SF-Pro-Display-Medium.otf */,
+				C4BA0E2F25A4350400E42008 /* SF-Pro-Display-Heavy.otf */,
+				C4BA0E3025A4350400E42008 /* SF-Pro-Display-Semibold.otf */,
+				C4BA0E3125A4350400E42008 /* SF-Pro-Text-Regular.otf */,
+				C4BA0E3225A4350400E42008 /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C4BA0E3C25A43A5B00E42008 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA0E3D25A43A8700E42008 /* MainCell.swift */,
+				C4BA0E3E25A43A8700E42008 /* MainCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C4BA0E4325A43ED000E42008 /* AboutApp */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA0E4425A43EE400E42008 /* AboutAppVC.swift */,
+				C4BA0E4525A43EE400E42008 /* AboutAppVC.xib */,
+			);
+			path = AboutApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +273,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BA0E3A25A4350400E42008 /* SF-Pro-Text-Semibold.otf in Resources */,
+				C4BA0E4025A43A8700E42008 /* MainCell.xib in Resources */,
+				C4BA0E3925A4350400E42008 /* SF-Pro-Text-Regular.otf in Resources */,
+				C4BA0E3625A4350400E42008 /* SF-Pro-Display-Medium.otf in Resources */,
 				C40C644725A42BE800AF6CEA /* LaunchScreen.storyboard in Resources */,
+				C4BA0E3825A4350400E42008 /* SF-Pro-Display-Semibold.otf in Resources */,
+				C4BA0E3325A4350400E42008 /* SF-Pro-Display-Light.otf in Resources */,
 				C40C646325A42D0200AF6CEA /* MainVC.xib in Resources */,
 				C40C645D25A42CCA00AF6CEA /* TabBarController.xib in Resources */,
+				C4BA0E3525A4350400E42008 /* SF-Pro-Display-Bold.otf in Resources */,
+				C4BA0E4725A43EE400E42008 /* AboutAppVC.xib in Resources */,
+				C4BA0E3425A4350400E42008 /* SF-Pro-Display-Regular.otf in Resources */,
 				C40C644425A42BE800AF6CEA /* Assets.xcassets in Resources */,
+				C4BA0E3725A4350400E42008 /* SF-Pro-Display-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40C643B25A42BE600AF6CEA /* AppDelegate.swift in Sources */,
+				C4BA0E4625A43EE400E42008 /* AboutAppVC.swift in Sources */,
+				C4BA0E2425A4313000E42008 /* UIColor.swift in Sources */,
+				C4BA0E3F25A43A8700E42008 /* MainCell.swift in Sources */,
 				C40C646225A42D0200AF6CEA /* MainVC.swift in Sources */,
+				C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */,
 				C40C645C25A42CCA00AF6CEA /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
