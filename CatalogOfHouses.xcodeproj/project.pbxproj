@@ -14,6 +14,7 @@
 		C40C645D25A42CCA00AF6CEA /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40C645B25A42CCA00AF6CEA /* TabBarController.xib */; };
 		C40C646225A42D0200AF6CEA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C646025A42D0200AF6CEA /* MainVC.swift */; };
 		C40C646325A42D0200AF6CEA /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40C646125A42D0200AF6CEA /* MainVC.xib */; };
+		C4525AA325A59C010026E63F /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4525AA225A59C010026E63F /* SF-Pro-Display-LightItalic.otf */; };
 		C4BA0E2425A4313000E42008 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA0E2325A4313000E42008 /* UIColor.swift */; };
 		C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA0E2725A4337800E42008 /* IBDesignable.swift */; };
 		C4BA0E3325A4350400E42008 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E2B25A4350400E42008 /* SF-Pro-Display-Light.otf */; };
@@ -40,6 +41,7 @@
 		C40C645B25A42CCA00AF6CEA /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 		C40C646025A42D0200AF6CEA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C40C646125A42D0200AF6CEA /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		C4525AA225A59C010026E63F /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
 		C4BA0E2325A4313000E42008 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C4BA0E2725A4337800E42008 /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		C4BA0E2B25A4350400E42008 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		C4BA0E2A25A4350400E42008 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C4525AA225A59C010026E63F /* SF-Pro-Display-LightItalic.otf */,
 				C4BA0E2B25A4350400E42008 /* SF-Pro-Display-Light.otf */,
 				C4BA0E2C25A4350400E42008 /* SF-Pro-Display-Regular.otf */,
 				C4BA0E2D25A4350400E42008 /* SF-Pro-Display-Bold.otf */,
@@ -275,6 +278,7 @@
 			files = (
 				C4BA0E3A25A4350400E42008 /* SF-Pro-Text-Semibold.otf in Resources */,
 				C4BA0E4025A43A8700E42008 /* MainCell.xib in Resources */,
+				C4525AA325A59C010026E63F /* SF-Pro-Display-LightItalic.otf in Resources */,
 				C4BA0E3925A4350400E42008 /* SF-Pro-Text-Regular.otf in Resources */,
 				C4BA0E3625A4350400E42008 /* SF-Pro-Display-Medium.otf in Resources */,
 				C40C644725A42BE800AF6CEA /* LaunchScreen.storyboard in Resources */,
