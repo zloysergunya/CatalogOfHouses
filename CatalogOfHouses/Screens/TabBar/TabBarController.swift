@@ -15,40 +15,46 @@ class TabBarController: UITabBarController {
     }
     
     private func setupUI() {
-        setupNavigationBar()
-        let mainVC = MainVC(nibName: "MainVC", bundle: nil)
+        let mainVC = UINavigationController(rootViewController: MainVC(nibName: "MainVC", bundle: nil))
         mainVC.tabBarItem.title = "Главная"
-        mainVC.tabBarItem.image = UIImage.init(systemName: "square.grid.2x2")?.withTintColor(.white)
-        mainVC.tabBarItem.selectedImage = UIImage.init(systemName: "square.grid.2x2")?.withTintColor(.yellow)
+        mainVC.tabBarItem.image = UIImage(systemName: "square.grid.2x2")
         
-        let aboutAppVC = AboutAppVC(nibName: "AboutAppVC", bundle: nil)
+        let homeVC = UINavigationController(rootViewController: HomeVC(nibName: "HomeVC", bundle: nil))
+        homeVC.tabBarItem.title = "Дом"
+        homeVC.tabBarItem.image = UIImage(systemName: "house")
+        
+        let profileVC = UINavigationController(rootViewController: ProfileVC(nibName: "ProfileVC", bundle: nil))
+        profileVC.tabBarItem.title = "Профиль"
+        profileVC.tabBarItem.image = UIImage(systemName: "person")
+        
+        let aboutAppVC = UINavigationController(rootViewController: AboutAppVC(nibName: "AboutAppVC", bundle: nil))
         aboutAppVC.tabBarItem.title = "Описание"
-        aboutAppVC.tabBarItem.image = UIImage.init(systemName: "line.horizontal.3")?.withTintColor(.white)
-        self.tabBar.barTintColor = UIColor(named: "blackMainColor")
-//        self.tabBar.alpha = 0.9
-        viewControllers = [mainVC, aboutAppVC]
+        aboutAppVC.tabBarItem.image = UIImage(systemName: "line.horizontal.3")
+        tabBar.barTintColor = UIColor(named: "blackMainColor")
+        
+        UINavigationBar.appearance().barTintColor = UIColor(named: "blackMainColor")
+        UINavigationBar.appearance().isTranslucent = false
+        
+        viewControllers = [mainVC, homeVC, profileVC, aboutAppVC]
+//        setupNavigationBar()
     }
     
     private func setupNavigationBar() {
-        let leftButton = UIButton(type: .system)
-        leftButton.setImage(UIImage(systemName: "chevron.left")?.withTintColor(.white), for: .normal)
-        leftButton.tintColor = .white
-        leftButton.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
-        
         let middleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 38))
         middleImageView.image = UIImage(named: "logo")
         middleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = middleImageView
         
         let rightButton = UIButton(type: .system)
+        rightButton.addTarget(self, action: #selector(openHomeSettingsVC), for: .touchUpInside)
         rightButton.setImage(UIImage(systemName: "ellipsis")?.withTintColor(.white), for: .normal)
         rightButton.tintColor = .white
         rightButton.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
-        
-        UINavigationBar.appearance().barTintColor = UIColor(named: "blackMainColor")
-        UINavigationBar.appearance().isTranslucent = false
     }
 
+    @objc private func openHomeSettingsVC() {
+        let vc = HomeSettingsVC(nibName: "HomeSettingsVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

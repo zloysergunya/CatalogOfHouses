@@ -16,11 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("======= Директория приложения =======\n\(NSHomeDirectory())\n=============================\n")
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: TabBarController(nibName: "TabBarController", bundle: nil))
+        window?.rootViewController = TabBarController(nibName: "TabBarController", bundle: nil)
         window?.makeKeyAndVisible()
         
         return true
     }
-
 }
-

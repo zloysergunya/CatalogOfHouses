@@ -1,13 +1,13 @@
 //
-//  AboutAppVC.swift
+//  ProfileVC.swift
 //  CatalogOfHouses
 //
-//  Created by Sergey Kotov on 05.01.2021.
+//  Created by Sergey Kotov on 06.01.2021.
 //
 
 import UIKit
 
-class AboutAppVC: UIViewController {
+class ProfileVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,5 +23,9 @@ class AboutAppVC: UIViewController {
         middleImageView.image = UIImage(named: "logo")
         middleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = middleImageView
+    }
+
+    @IBAction func saveProfile(_ sender: Any) {
+        
     }
 }

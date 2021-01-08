@@ -39,7 +39,7 @@
                     </constraints>
                     <attributedString key="attributedText">
                         <fragment>
-                            <mutableString key="content" base64-UTF8="YES">
+                            <string key="content" base64-UTF8="YES">
 0JzQvtCx0LjQu9GM0L3QvtC1INC/0YDQuNC70L7QttC10L3QuNC1ICLQnNC+0LHQuNC70YzQvdGL0Lkg
 0LrQsNGC0LDQu9C+0LMg0LTQvtC80L7QsiAo0JzQmtCUKSIg0L7RgtC+0LHRgNCw0LbQsNC10YIg0YHQ
 stC+0LTQvdGD0Y4g0LjQvdGE0L7RgNC80LDRhtC40Y4g0L4g0LbQuNC70L7QvCDRhNC+0L3QtNC1INGD
@@ -53,7 +53,7 @@ INGE0LjQu9GM0YLRgNCw0LzQuC4KCtCU0LvRjyDQv9C+0LvRg9GH0LXQvdC40Y8g0LTQtdGC0LDQu9GM
 0L3QvtC5INC40L3RhNC+0YDQvNCw0YbQuNC4INC/0L4g0L7RgtC00LXQu9GM0L3QvtC80YMg0LTQvtC8
 0YMg0L/RgNC10LTRg9GB0LzQvtGC0YDQtdC90LAg0LLQvtC30LzQvtC20L3QvtGB0YLRjCDQv9C+0LjR
 gdC60LAuA
-</mutableString>
+</string>
                             <attributes>
                                 <color key="NSColor" red="1" green="0.99998801950000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <font key="NSFont" size="14" name="SFProDisplay-LightItalic"/>

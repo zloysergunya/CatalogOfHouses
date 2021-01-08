@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeSettingsVC" customModule="CatalogOfHouses" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-ut-HbK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyi-Mh-d8N">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка полей карточки дома" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJJ-Sa-Qn8">
+                                    <rect key="frame" x="32" y="32" width="277" height="21"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AB1-lm-sNp">
+                                    <rect key="frame" x="16" y="69" width="382" height="575"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dL5-zt-v43" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FL8-8X-1aX">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УК" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4N-a0-wXO">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="H4N-a0-wXO" firstAttribute="leading" secondItem="dL5-zt-v43" secondAttribute="leading" constant="16" id="HNQ-jA-lZF"/>
+                                                <constraint firstAttribute="trailing" secondItem="FL8-8X-1aX" secondAttribute="trailing" constant="16" id="cE4-0x-t40"/>
+                                                <constraint firstItem="FL8-8X-1aX" firstAttribute="centerY" secondItem="dL5-zt-v43" secondAttribute="centerY" id="fQv-ZY-79h"/>
+                                                <constraint firstItem="FL8-8X-1aX" firstAttribute="leading" secondItem="H4N-a0-wXO" secondAttribute="trailing" constant="16" id="gTN-1H-K0R"/>
+                                                <constraint firstItem="H4N-a0-wXO" firstAttribute="centerY" secondItem="dL5-zt-v43" secondAttribute="centerY" id="gm1-AW-quM"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVG-hA-5uf" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="53" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sg1-bg-ILc">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начало управления" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lby-t6-dvP">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="sg1-bg-ILc" firstAttribute="centerY" secondItem="EVG-hA-5uf" secondAttribute="centerY" id="8kd-lp-DOQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="sg1-bg-ILc" secondAttribute="trailing" constant="16" id="DYz-Tz-S3x"/>
+                                                <constraint firstItem="lby-t6-dvP" firstAttribute="leading" secondItem="EVG-hA-5uf" secondAttribute="leading" constant="16" id="Mt4-ej-3He"/>
+                                                <constraint firstItem="sg1-bg-ILc" firstAttribute="leading" secondItem="lby-t6-dvP" secondAttribute="trailing" constant="16" id="cH4-lb-qON"/>
+                                                <constraint firstItem="lby-t6-dvP" firstAttribute="centerY" secondItem="EVG-hA-5uf" secondAttribute="centerY" id="tvc-LI-dlc"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-rr-ciT" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="106" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Rc-AS-AJx">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Окончание управления" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krK-9i-C10">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="krK-9i-C10" firstAttribute="centerY" secondItem="OLx-rr-ciT" secondAttribute="centerY" id="0Je-RZ-bxq"/>
+                                                <constraint firstItem="krK-9i-C10" firstAttribute="leading" secondItem="OLx-rr-ciT" secondAttribute="leading" constant="16" id="2Vm-4s-Usx"/>
+                                                <constraint firstItem="2Rc-AS-AJx" firstAttribute="centerY" secondItem="OLx-rr-ciT" secondAttribute="centerY" id="Lsx-p1-KNt"/>
+                                                <constraint firstItem="2Rc-AS-AJx" firstAttribute="leading" secondItem="krK-9i-C10" secondAttribute="trailing" constant="16" id="d3F-Hy-4H5"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Rc-AS-AJx" secondAttribute="trailing" constant="16" id="sAi-Cy-kI3"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxf-o7-4qo" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="159" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-Hv-tZr">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общая площадь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJt-NL-eMw">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="DVE-Hv-tZr" firstAttribute="leading" secondItem="RJt-NL-eMw" secondAttribute="trailing" constant="16" id="5S5-Gn-Vy5"/>
+                                                <constraint firstItem="RJt-NL-eMw" firstAttribute="leading" secondItem="cxf-o7-4qo" secondAttribute="leading" constant="16" id="FWT-k0-5xj"/>
+                                                <constraint firstItem="RJt-NL-eMw" firstAttribute="centerY" secondItem="cxf-o7-4qo" secondAttribute="centerY" id="V7E-x0-hxJ"/>
+                                                <constraint firstItem="DVE-Hv-tZr" firstAttribute="centerY" secondItem="cxf-o7-4qo" secondAttribute="centerY" id="YhQ-7a-7Vr"/>
+                                                <constraint firstAttribute="trailing" secondItem="DVE-Hv-tZr" secondAttribute="trailing" constant="16" id="not-TY-G77"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfz-X5-cr3" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="212" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-cI-B5m">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жилая площадь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99e-m9-mGK">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="99e-m9-mGK" firstAttribute="centerY" secondItem="qfz-X5-cr3" secondAttribute="centerY" id="07B-Ji-W5e"/>
+                                                <constraint firstItem="IMf-cI-B5m" firstAttribute="centerY" secondItem="qfz-X5-cr3" secondAttribute="centerY" id="2gj-Wl-A00"/>
+                                                <constraint firstItem="99e-m9-mGK" firstAttribute="leading" secondItem="qfz-X5-cr3" secondAttribute="leading" constant="16" id="5BQ-cR-17r"/>
+                                                <constraint firstAttribute="trailing" secondItem="IMf-cI-B5m" secondAttribute="trailing" constant="16" id="j5k-J2-gGw"/>
+                                                <constraint firstItem="IMf-cI-B5m" firstAttribute="leading" secondItem="99e-m9-mGK" secondAttribute="trailing" constant="16" id="p2n-K2-oWK"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfI-PM-vO8" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="265" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-We-JcG">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нежилая площадь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEN-Td-Zd9">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="fEN-Td-Zd9" firstAttribute="centerY" secondItem="DfI-PM-vO8" secondAttribute="centerY" id="5il-ca-29s"/>
+                                                <constraint firstAttribute="trailing" secondItem="0bx-We-JcG" secondAttribute="trailing" constant="16" id="Kmg-h3-bIg"/>
+                                                <constraint firstItem="0bx-We-JcG" firstAttribute="centerY" secondItem="DfI-PM-vO8" secondAttribute="centerY" id="VNc-dC-0xh"/>
+                                                <constraint firstItem="fEN-Td-Zd9" firstAttribute="leading" secondItem="DfI-PM-vO8" secondAttribute="leading" constant="16" id="ll0-UP-X9a"/>
+                                                <constraint firstItem="0bx-We-JcG" firstAttribute="leading" secondItem="fEN-Td-Zd9" secondAttribute="trailing" constant="16" id="zRf-VT-Q3u"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sS-V3-2K2" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="318" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCx-aQ-VqJ">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Площадь МОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCq-uE-2RQ">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="pCx-aQ-VqJ" firstAttribute="centerY" secondItem="5sS-V3-2K2" secondAttribute="centerY" id="261-sR-nTC"/>
+                                                <constraint firstItem="pCx-aQ-VqJ" firstAttribute="leading" secondItem="kCq-uE-2RQ" secondAttribute="trailing" constant="16" id="FY1-ay-WMg"/>
+                                                <constraint firstItem="kCq-uE-2RQ" firstAttribute="centerY" secondItem="5sS-V3-2K2" secondAttribute="centerY" id="Lfo-E3-HXD"/>
+                                                <constraint firstItem="kCq-uE-2RQ" firstAttribute="leading" secondItem="5sS-V3-2K2" secondAttribute="leading" constant="16" id="Wwl-BN-QGP"/>
+                                                <constraint firstAttribute="trailing" secondItem="pCx-aQ-VqJ" secondAttribute="trailing" constant="16" id="kaC-AB-IEa"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbX-FG-lEF" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="371" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FRr-yY-TDe">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Площадь чердаков и подвалов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLK-kP-NxL">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="FRr-yY-TDe" firstAttribute="leading" secondItem="jLK-kP-NxL" secondAttribute="trailing" constant="16" id="2B9-ze-vTy"/>
+                                                <constraint firstItem="jLK-kP-NxL" firstAttribute="leading" secondItem="SbX-FG-lEF" secondAttribute="leading" constant="16" id="OjY-jN-kdc"/>
+                                                <constraint firstAttribute="trailing" secondItem="FRr-yY-TDe" secondAttribute="trailing" constant="16" id="SMH-cT-DuW"/>
+                                                <constraint firstItem="jLK-kP-NxL" firstAttribute="centerY" secondItem="SbX-FG-lEF" secondAttribute="centerY" id="gxq-9X-ORp"/>
+                                                <constraint firstItem="FRr-yY-TDe" firstAttribute="centerY" secondItem="SbX-FG-lEF" secondAttribute="centerY" id="x7D-zv-tPX"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-ul-emF" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="424" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Khz-sb-UgT">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год постройки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsu-jM-tSV">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Khz-sb-UgT" firstAttribute="centerY" secondItem="Dax-ul-emF" secondAttribute="centerY" id="3At-vk-SY3"/>
+                                                <constraint firstItem="Khz-sb-UgT" firstAttribute="leading" secondItem="Vsu-jM-tSV" secondAttribute="trailing" constant="16" id="f2C-is-XcS"/>
+                                                <constraint firstAttribute="trailing" secondItem="Khz-sb-UgT" secondAttribute="trailing" constant="16" id="hFt-mB-MYd"/>
+                                                <constraint firstItem="Vsu-jM-tSV" firstAttribute="leading" secondItem="Dax-ul-emF" secondAttribute="leading" constant="16" id="pWG-lp-ruj"/>
+                                                <constraint firstItem="Vsu-jM-tSV" firstAttribute="centerY" secondItem="Dax-ul-emF" secondAttribute="centerY" id="tng-Jh-3Li"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-Hl-mn0" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="477" width="382" height="45"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K35-6v-r4L">
+                                                    <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Этажность" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrg-Oh-QFU">
+                                                    <rect key="frame" x="16" y="15.5" width="285" height="14"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" name="orangeMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstItem="vrg-Oh-QFU" firstAttribute="centerY" secondItem="4LV-Hl-mn0" secondAttribute="centerY" id="0WX-YG-pGg"/>
+                                                <constraint firstItem="vrg-Oh-QFU" firstAttribute="leading" secondItem="4LV-Hl-mn0" secondAttribute="leading" constant="16" id="IPT-FK-zCg"/>
+                                                <constraint firstAttribute="trailing" secondItem="K35-6v-r4L" secondAttribute="trailing" constant="16" id="hRS-WY-afo"/>
+                                                <constraint firstItem="K35-6v-r4L" firstAttribute="centerY" secondItem="4LV-Hl-mn0" secondAttribute="centerY" id="iot-fu-m5c"/>
+                                                <constraint firstItem="K35-6v-r4L" firstAttribute="leading" secondItem="vrg-Oh-QFU" secondAttribute="trailing" constant="16" id="rME-b4-2F7"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kb-wg-1sH" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="530" width="382" height="45"/>
+                                            <color key="backgroundColor" name="darkMainColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="ymQ-Wg-ckN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                            <state key="normal" title="Сохранить">
+                                                <color key="titleColor" name="orangeMainColor"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" name="orangeMainColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="blackMainColor"/>
+                            <constraints>
+                                <constraint firstItem="NJJ-Sa-Qn8" firstAttribute="leading" secondItem="Lyi-Mh-d8N" secondAttribute="leading" constant="32" id="WIg-ek-5Da"/>
+                                <constraint firstItem="AB1-lm-sNp" firstAttribute="top" secondItem="NJJ-Sa-Qn8" secondAttribute="bottom" constant="16" id="ddR-oB-tmM"/>
+                                <constraint firstItem="NJJ-Sa-Qn8" firstAttribute="top" secondItem="Lyi-Mh-d8N" secondAttribute="top" constant="32" id="hGu-QT-3C4"/>
+                                <constraint firstAttribute="trailing" secondItem="AB1-lm-sNp" secondAttribute="trailing" constant="16" id="rU1-ua-gdF"/>
+                                <constraint firstItem="AB1-lm-sNp" firstAttribute="leading" secondItem="Lyi-Mh-d8N" secondAttribute="leading" constant="16" id="wuN-lx-eXQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lyi-Mh-d8N" secondAttribute="trailing" id="Svo-2b-miP"/>
+                        <constraint firstItem="cEe-hM-q2W" firstAttribute="bottom" secondItem="Lyi-Mh-d8N" secondAttribute="bottom" id="YEw-fp-UPF"/>
+                        <constraint firstItem="Lyi-Mh-d8N" firstAttribute="leading" secondItem="vgP-ut-HbK" secondAttribute="leading" id="fMA-I4-xnE"/>
+                        <constraint firstItem="Lyi-Mh-d8N" firstAttribute="top" secondItem="vgP-ut-HbK" secondAttribute="top" id="s3e-yu-FcV"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="cEe-hM-q2W"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="gBP-cG-bgw"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="blackMainColor"/>
+            <constraints>
+                <constraint firstItem="vgP-ut-HbK" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0bz-y4-dyO"/>
+                <constraint firstItem="vgP-ut-HbK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Df-0E-ODP"/>
+                <constraint firstItem="Lyi-Mh-d8N" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.950893" id="M0p-uM-gcw"/>
+                <constraint firstItem="vgP-ut-HbK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bMp-pg-0y8"/>
+                <constraint firstItem="Lyi-Mh-d8N" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="uLw-id-v6C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vgP-ut-HbK" secondAttribute="trailing" id="z7q-Ck-3Ni"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="50.892857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blackMainColor">
+            <color red="0.086000002920627594" green="0.086000002920627594" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkMainColor">
+            <color red="0.20399999618530273" green="0.20399999618530273" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orangeMainColor">
+            <color red="0.91399997472763062" green="0.64300000667572021" blue="0.42399999499320984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

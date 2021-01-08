@@ -22,6 +22,25 @@ class MainVC: UIViewController {
     
     private func setupUI() {
         setupTableView(regionsTable)
+        setupNavigationBar()
+//        let params = ["action": "GetRegions",
+//                      "id": 4] as [String:Any]
+//        HTTPRequest(params: params) { data, status in
+//
+//        }
+        
+        var params = ["action": "Auth"] as [String:Any]
+        params["params"] = ["user":"test", "pass":""].jsonString()
+        HTTPRequest(params: params) { data, status in
+            
+        }
+    }
+    
+    private func setupNavigationBar() {
+        let middleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 38))
+        middleImageView.image = UIImage(named: "logo")
+        middleImageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = middleImageView
     }
     
     private func updateUI() {
