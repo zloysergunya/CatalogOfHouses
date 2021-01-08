@@ -17,7 +17,7 @@ var AUTH_TOKEN: String? {
     get { return UserDefaults.standard.string(forKey: "authToken") }
 }
 
-func HTTPRequest(_ url: String = SERVER_URL,
+func NetworkManager(_ url: String = SERVER_URL,
                  method: String = "POST",
                  params: [String:Any?] = [:],
                  constants: [String:Any?] = [:],

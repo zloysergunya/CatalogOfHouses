@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = AuthVC(nibName: "AuthVC", bundle: nil)
         window?.makeKeyAndVisible()
         
+        setupKeyboardManager()
+        
         return true
+    }
+    
+    private func setupKeyboardManager() {
+        let manager = IQKeyboardManager.shared
+        manager.enable = true
+        manager.toolbarTintColor = .orangeMainColor
+        manager.toolbarDoneBarButtonItemText = "Готово"
+        manager.placeholderColor = .grayMainColor
+        manager.toolbarBarTintColor = .blackMainColor
     }
 }

@@ -30,9 +30,9 @@ class TabBarController: UITabBarController {
         let aboutAppVC = UINavigationController(rootViewController: AboutAppVC(nibName: "AboutAppVC", bundle: nil))
         aboutAppVC.tabBarItem.title = "Описание"
         aboutAppVC.tabBarItem.image = UIImage(systemName: "line.horizontal.3")
-        tabBar.barTintColor = UIColor(named: "blackMainColor")
+        tabBar.barTintColor = .blackMainColor
         
-        UINavigationBar.appearance().barTintColor = UIColor(named: "blackMainColor")
+        UINavigationBar.appearance().barTintColor = .blackMainColor
         UINavigationBar.appearance().isTranslucent = false
         
         viewControllers = [mainVC, homeVC, profileVC, aboutAppVC]

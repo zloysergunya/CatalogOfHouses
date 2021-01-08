@@ -10,6 +10,8 @@ import UIKit
 class MainVC: UIViewController {
     @IBOutlet weak var regionsTable: UITableView!
     
+    private let dataProvider = MainDataProvider()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -23,11 +25,14 @@ class MainVC: UIViewController {
     private func setupUI() {
         setupTableView(regionsTable)
         setupNavigationBar()
-//        let params = ["action": "GetRegions",
-//                      "id": 4] as [String:Any]
-//        HTTPRequest(params: params) { data, status in
-//
-//        }
+        dataProvider.getRegions() { [weak self] status in
+            guard let self = self else { return }
+            if status > 399 {
+                self.dialog(status)
+            } else {
+                self.updateUI()
+            }
+        }
     }
     
     private func setupNavigationBar() {
@@ -38,7 +43,7 @@ class MainVC: UIViewController {
     }
     
     private func updateUI() {
-        
+        regionsTable.reloadData()
     }
 
 }

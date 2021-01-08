@@ -125,8 +125,8 @@
                 <constraint firstItem="VeG-ow-poh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MLZ-4P-Ua5"/>
                 <constraint firstItem="zlg-FX-xjo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RGl-P4-mXq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VeG-ow-poh" secondAttribute="trailing" constant="16" id="YVY-Pg-lxV"/>
+                <constraint firstItem="zlg-FX-xjo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="oiw-q7-N0Z"/>
                 <constraint firstItem="VeG-ow-poh" firstAttribute="top" secondItem="zlg-FX-xjo" secondAttribute="bottom" constant="32" id="rr0-9w-Lm4"/>
-                <constraint firstItem="zlg-FX-xjo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="sBn-vr-vEK"/>
             </constraints>
             <point key="canvasLocation" x="139" y="90"/>
         </view>

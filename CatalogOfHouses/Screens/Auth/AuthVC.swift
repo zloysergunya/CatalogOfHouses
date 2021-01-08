@@ -11,7 +11,7 @@ class AuthVC: UIViewController {
     @IBOutlet weak var loginField: RoundField!
     @IBOutlet weak var passwordField: RoundField!
     
-    let dataProvider = AuthDataProvider()
+    private let dataProvider = AuthDataProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class AuthVC: UIViewController {
         dataProvider.signIn(user: loginField.text!, password: passwordField.text!) { [weak self] status in
             guard let self = self else { return }
             if status > 399 {
-                self.dialog(title: "Ошибка авторизации", message: "Попробуйте ещё раз")
+                self.dialog(status)
             } else {
                 self.checkPincode()
             }

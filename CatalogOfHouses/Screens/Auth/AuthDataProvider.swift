@@ -8,11 +8,11 @@
 import Foundation
 
 class AuthDataProvider {
-    func signIn(user: String, password: String, complition: @escaping (_ status: Int) -> Void) {
+    func signIn(user: String, password: String, completion: @escaping (_ status: Int) -> Void) {
         var params = ["action": "Auth"] as [String:Any]
         params["params"] = ["user": user, "pass": password].jsonString()
-        HTTPRequest(params: params) { data, status in
-            complition(status)
+        NetworkManager(params: params) { data, status in
+            completion(status)
         }
     }
 }
