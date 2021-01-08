@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("======= Директория приложения =======\n\(NSHomeDirectory())\n=============================\n")
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = TabBarController(nibName: "TabBarController", bundle: nil)
+        window?.rootViewController = AuthVC(nibName: "AuthVC", bundle: nil)
         window?.makeKeyAndVisible()
         
         return true

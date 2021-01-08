@@ -36,6 +36,10 @@
 		C4BA0E4725A43EE400E42008 /* AboutAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BA0E4525A43EE400E42008 /* AboutAppVC.xib */; };
 		C4C54EB725A8308500CFE0E3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C54EB525A8308500CFE0E3 /* HomeVC.swift */; };
 		C4C54EB825A8308500CFE0E3 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C54EB625A8308500CFE0E3 /* HomeVC.xib */; };
+		C4C54EBE25A8374700CFE0E3 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C54EBC25A8374700CFE0E3 /* AuthVC.swift */; };
+		C4C54EBF25A8374700CFE0E3 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C54EBD25A8374700CFE0E3 /* AuthVC.xib */; };
+		C4C54EC225A8376800CFE0E3 /* AuthDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C54EC125A8376800CFE0E3 /* AuthDataProvider.swift */; };
+		C4C54ED925A8386700CFE0E3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C54ED825A8386700CFE0E3 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		C4BA0E4525A43EE400E42008 /* AboutAppVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutAppVC.xib; sourceTree = "<group>"; };
 		C4C54EB525A8308500CFE0E3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C4C54EB625A8308500CFE0E3 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		C4C54EBC25A8374700CFE0E3 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		C4C54EBD25A8374700CFE0E3 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
+		C4C54EC125A8376800CFE0E3 /* AuthDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataProvider.swift; sourceTree = "<group>"; };
+		C4C54ED825A8386700CFE0E3 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +153,9 @@
 		C40C645625A42C7000AF6CEA /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				C4C54EBC25A8374700CFE0E3 /* AuthVC.swift */,
+				C4C54EBD25A8374700CFE0E3 /* AuthVC.xib */,
+				C4C54EC125A8376800CFE0E3 /* AuthDataProvider.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 		C4BA0E2025A430AC00E42008 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C4C54ED825A8386700CFE0E3 /* UIViewController.swift */,
 				C4BA0E2325A4313000E42008 /* UIColor.swift */,
 			);
 			path = Extensions;
@@ -333,6 +345,7 @@
 				C4525AA925A5A3C90026E63F /* ProfileVC.xib in Resources */,
 				C40C646325A42D0200AF6CEA /* MainVC.xib in Resources */,
 				C40C645D25A42CCA00AF6CEA /* TabBarController.xib in Resources */,
+				C4C54EBF25A8374700CFE0E3 /* AuthVC.xib in Resources */,
 				C4BA0E3525A4350400E42008 /* SF-Pro-Display-Bold.otf in Resources */,
 				C4C54EB825A8308500CFE0E3 /* HomeVC.xib in Resources */,
 				C4BA0E4725A43EE400E42008 /* AboutAppVC.xib in Resources */,
@@ -349,12 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C54ED925A8386700CFE0E3 /* UIViewController.swift in Sources */,
 				C40C643B25A42BE600AF6CEA /* AppDelegate.swift in Sources */,
 				C4BA0E4625A43EE400E42008 /* AboutAppVC.swift in Sources */,
 				C4BA0E2425A4313000E42008 /* UIColor.swift in Sources */,
+				C4C54EC225A8376800CFE0E3 /* AuthDataProvider.swift in Sources */,
 				C4BA0E3F25A43A8700E42008 /* MainCell.swift in Sources */,
 				C4A11E8925A6F03D00C33AB4 /* HomeSettingsVC.swift in Sources */,
 				C4525AA825A5A3C90026E63F /* ProfileVC.swift in Sources */,
+				C4C54EBE25A8374700CFE0E3 /* AuthVC.swift in Sources */,
 				C40C646225A42D0200AF6CEA /* MainVC.swift in Sources */,
 				C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */,
 				C40C645C25A42CCA00AF6CEA /* TabBarController.swift in Sources */,

@@ -11,8 +11,18 @@ class HomeSettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+    }
+    
+    private func setupUI() {
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
+        let middleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 38))
+        middleImageView.image = UIImage(named: "logo")
+        middleImageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = middleImageView
     }
 
 }

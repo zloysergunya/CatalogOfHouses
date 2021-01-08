@@ -36,25 +36,5 @@ class TabBarController: UITabBarController {
         UINavigationBar.appearance().isTranslucent = false
         
         viewControllers = [mainVC, homeVC, profileVC, aboutAppVC]
-//        setupNavigationBar()
-    }
-    
-    private func setupNavigationBar() {
-        let middleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 38))
-        middleImageView.image = UIImage(named: "logo")
-        middleImageView.contentMode = .scaleAspectFit
-        navigationItem.titleView = middleImageView
-        
-        let rightButton = UIButton(type: .system)
-        rightButton.addTarget(self, action: #selector(openHomeSettingsVC), for: .touchUpInside)
-        rightButton.setImage(UIImage(systemName: "ellipsis")?.withTintColor(.white), for: .normal)
-        rightButton.tintColor = .white
-        rightButton.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
-    }
-
-    @objc private func openHomeSettingsVC() {
-        let vc = HomeSettingsVC(nibName: "HomeSettingsVC", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

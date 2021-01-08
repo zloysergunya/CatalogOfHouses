@@ -28,12 +28,6 @@ class MainVC: UIViewController {
 //        HTTPRequest(params: params) { data, status in
 //
 //        }
-        
-        var params = ["action": "Auth"] as [String:Any]
-        params["params"] = ["user":"test", "pass":""].jsonString()
-        HTTPRequest(params: params) { data, status in
-            
-        }
     }
     
     private func setupNavigationBar() {
