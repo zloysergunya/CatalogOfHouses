@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutAppVC" customModule="CatalogOfHouses" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutAppLabel" destination="CoZ-ro-AOv" id="fFG-Qf-vj4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О приложении" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALN-k7-FQI">
+                    <rect key="frame" x="32" y="76" width="124.5" height="21"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoZ-ro-AOv">
+                    <rect key="frame" x="16" y="113" width="382" height="307.5"/>
+                    <color key="backgroundColor" name="grayMainColor"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <mutableString key="content" base64-UTF8="YES">
+0JzQvtCx0LjQu9GM0L3QvtC1INC/0YDQuNC70L7QttC10L3QuNC1ICLQnNC+0LHQuNC70YzQvdGL0Lkg
+0LrQsNGC0LDQu9C+0LMg0LTQvtC80L7QsiAo0JzQmtCUKSIg0L7RgtC+0LHRgNCw0LbQsNC10YIg0YHQ
+stC+0LTQvdGD0Y4g0LjQvdGE0L7RgNC80LDRhtC40Y4g0L4g0LbQuNC70L7QvCDRhNC+0L3QtNC1INGD
+0L/RgNCw0LLQu9GP0Y7RidC40YUg0LrQvtC80L/QsNC90LjQuSwg0LLRhdC+0LTRj9GJ0LjRhSDQsiDR
+hdC+0LvQtNC40L3Qsywg0L3QsCDRgtC10LrRg9GJ0YPRjiDQtNCw0YLRgyAo0L/QviDRg9C80L7Qu9GH
+0LDQvdC40Y4pINC90LAg0L7RgdC90L7QstCw0L3QuNC4INC00LDQvdC90YvRhSDQuNC3INCc0LDRgdGC
+0LXRgCDRgdC/0YDQsNCy0L7Rh9C90LjQutCwLgsK0JTQu9GPINC/0L7Qu9GD0YfQtdC90LjRjyDRgdCy
+0L7QtNC90L7QuSDQuNC90YTQvtGA0LzQsNGG0LjQuCDQv9C+INGA0LDQt9C70LjRh9C90YvQvCDQv9C+
+0LrQsNC30LDRgtC10LvRj9C8INC80L7QttC90L4g0LLQvtGB0L/QvtC70YzQt9C+0LLQsNGC0YzRgdGP
+INGE0LjQu9GM0YLRgNCw0LzQuC4KCtCU0LvRjyDQv9C+0LvRg9GH0LXQvdC40Y8g0LTQtdGC0LDQu9GM
+0L3QvtC5INC40L3RhNC+0YDQvNCw0YbQuNC4INC/0L4g0L7RgtC00LXQu9GM0L3QvtC80YMg0LTQvtC8
+0YMg0L/RgNC10LTRg9GB0LzQvtGC0YDQtdC90LAg0LLQvtC30LzQvtC20L3QvtGB0YLRjCDQv9C+0LjR
+gdC60LAuA
+</mutableString>
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="SFProDisplay-LightItalic"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="blackMainColor"/>
+            <constraints>
+                <constraint firstItem="ALN-k7-FQI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="1MH-Df-QrC"/>
+                <constraint firstItem="CoZ-ro-AOv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="K52-Ia-bN6"/>
+                <constraint firstItem="CoZ-ro-AOv" firstAttribute="top" secondItem="ALN-k7-FQI" secondAttribute="bottom" constant="16" id="Omp-n4-uGs"/>
+                <constraint firstAttribute="trailing" secondItem="CoZ-ro-AOv" secondAttribute="trailing" constant="16" id="ZTa-Iu-WaD"/>
+                <constraint firstItem="ALN-k7-FQI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="h6G-hl-wxC"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blackMainColor">
+            <color red="0.063000001013278961" green="0.063000001013278961" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayMainColor">
+            <color red="0.31400001049041748" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

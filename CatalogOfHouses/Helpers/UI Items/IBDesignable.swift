@@ -8,10 +8,26 @@
 import UIKit
 
 @IBDesignable
+class RoundLabel: UILabel {
+    @IBInspectable var cornerRadius: CGFloat = -1
+    @IBInspectable var borderWidth: CGFloat = 0
+    @IBInspectable var borderColor: UIColor = UIColor.clear
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.cornerRadius = cornerRadius
+        
+        self.layer.masksToBounds = true
+        self.layer.borderWidth = borderWidth
+        
+        self.layer.borderColor = borderColor.cgColor
+    }
+}
+
 class RoundView: UIView {
     @IBInspectable var cornerRadius: CGFloat = -1
     @IBInspectable var borderWidth: CGFloat = 0
-    @IBInspectable var borderColor : UIColor = UIColor.clear
+    @IBInspectable var borderColor: UIColor = UIColor.clear
     
     override func layoutSubviews() {
         super.layoutSubviews()

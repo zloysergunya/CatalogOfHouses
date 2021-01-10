@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("======= Директория приложения =======\n\(NSHomeDirectory())\n=============================\n")
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = AuthVC(nibName: "AuthVC", bundle: nil)
+        window?.rootViewController = LaunchScreen(nibName: "LaunchScreen", bundle: nil)
         window?.makeKeyAndVisible()
         
         setupKeyboardManager()
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         manager.enable = true
         manager.toolbarTintColor = .orangeMainColor
         manager.toolbarDoneBarButtonItemText = "Готово"
-        manager.placeholderColor = .grayMainColor
+        manager.placeholderColor = .white
         manager.toolbarBarTintColor = .blackMainColor
     }
 }
