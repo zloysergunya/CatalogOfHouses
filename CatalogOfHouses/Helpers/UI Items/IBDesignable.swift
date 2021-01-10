@@ -13,6 +13,25 @@ class RoundLabel: UILabel {
     @IBInspectable var borderWidth: CGFloat = 0
     @IBInspectable var borderColor: UIColor = UIColor.clear
     
+    @IBInspectable var topInset: CGFloat = 8.0
+    @IBInspectable var bottomInset: CGFloat = 8.0
+    @IBInspectable var leftInset: CGFloat = 8.0
+    @IBInspectable var rightInset: CGFloat = 8.0
+    
+    override func drawText(in rect: CGRect) {
+        let insets = UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
+        super.drawText(in: rect.inset(by: insets))
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        get {
+            var contentSize = super.intrinsicContentSize
+            contentSize.height += topInset + bottomInset
+            contentSize.width += leftInset + rightInset
+            return contentSize
+        }
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.layer.cornerRadius = cornerRadius
@@ -88,7 +107,7 @@ class RoundField: UITextField {
         super.layoutSubviews()
         self.layer.masksToBounds = true
         self.layer.borderWidth = borderWidth
-//        self.layer.cornerRadius = self.bounds.size.height / 2.0
+        //        self.layer.cornerRadius = self.bounds.size.height / 2.0
         
         self.layer.borderColor = borderColor.cgColor
         
@@ -118,7 +137,7 @@ class RoundTextView: UITextView {
     }
     @IBInspectable var borderWidth: CGFloat = 0
     @IBInspectable var borderColor: UIColor = UIColor.clear
-
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         if updateRadius {
