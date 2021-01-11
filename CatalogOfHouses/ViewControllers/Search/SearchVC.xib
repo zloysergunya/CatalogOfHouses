@@ -16,6 +16,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="CatalogOfHouses" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="eub-DA-A5I" id="Em9-HC-Lyr"/>
+                <outlet property="searchTable" destination="WOz-fv-2yw" id="5dp-fZ-JG2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -107,17 +109,17 @@
             <constraints>
                 <constraint firstItem="WOz-fv-2yw" firstAttribute="top" secondItem="qDM-ey-7w9" secondAttribute="bottom" id="16S-Dg-OKp"/>
                 <constraint firstItem="qDM-ey-7w9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2gC-qk-wsH"/>
+                <constraint firstItem="eub-DA-A5I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="3Px-Dr-xWN"/>
                 <constraint firstItem="eub-DA-A5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Coo-nE-8el"/>
-                <constraint firstItem="eub-DA-A5I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Guk-Hx-5bK"/>
                 <constraint firstItem="maP-tv-wRu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NDy-aI-Aqj"/>
                 <constraint firstItem="Rk4-wj-ncc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NeI-xT-4DB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rk4-wj-ncc" secondAttribute="bottom" constant="50" id="Obp-Ua-qIG"/>
-                <constraint firstItem="WOz-fv-2yw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ogf-QD-V2c"/>
+                <constraint firstItem="WOz-fv-2yw" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Ogf-QD-V2c"/>
                 <constraint firstItem="qDM-ey-7w9" firstAttribute="top" secondItem="maP-tv-wRu" secondAttribute="bottom" id="PED-3v-DjP"/>
                 <constraint firstItem="qDM-ey-7w9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QHi-fJ-6MT"/>
                 <constraint firstAttribute="bottom" secondItem="WOz-fv-2yw" secondAttribute="bottom" id="R65-MR-DpH"/>
                 <constraint firstAttribute="trailing" secondItem="maP-tv-wRu" secondAttribute="trailing" id="bhf-Fi-Vv6"/>
-                <constraint firstItem="WOz-fv-2yw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ci7-rs-jcM"/>
+                <constraint firstItem="WOz-fv-2yw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ci7-rs-jcM"/>
                 <constraint firstItem="maP-tv-wRu" firstAttribute="top" secondItem="eub-DA-A5I" secondAttribute="bottom" constant="16" id="eOV-2t-uhz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eub-DA-A5I" secondAttribute="trailing" constant="16" id="wB7-sh-MbU"/>
             </constraints>

@@ -40,7 +40,7 @@ class CitiesVC: UIViewController {
     }
     
     private func setupNavigationBar() {
-        setupMiddleImageView()
+        setupMiddleNavigationImageView()
     }
     
     private func updateUI() {

@@ -19,7 +19,7 @@ class HomeSettingsVC: UIViewController {
     }
     
     private func setupNavigationBar() {
-        setupMiddleImageView()
+        setupMiddleNavigationImageView()
         
 //        let leftButton = UIButton(type: .system)
 //        leftButton.addTarget(self, action: #selector(openHomeSettingsVC), for: .touchUpInside)

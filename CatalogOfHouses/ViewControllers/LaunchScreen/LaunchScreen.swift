@@ -16,6 +16,7 @@ class LaunchScreen: UIViewController {
     
     private func checkAccount() {
         if PINCODE != nil || AUTH_TOKEN != nil {
+            print("AUTH_TOKEN: \(AUTH_TOKEN!)")
             let vc = PinCodeVC(nibName: "PinCodeVC", bundle: nil)
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)

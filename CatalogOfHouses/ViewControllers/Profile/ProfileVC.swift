@@ -24,7 +24,7 @@ class ProfileVC: UIViewController {
     }
     
     private func setupNavigationBar() {
-        setupMiddleImageView()
+        setupMiddleNavigationImageView()
     }
 
     @IBAction func saveProfile(_ sender: Any) {

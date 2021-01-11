@@ -12,7 +12,7 @@ class CitiesDataProvider {
     
     func updateCities(regionID: String, completion: @escaping (_ status: Int) -> Void) {
         var params = ["action": "GetCities",
-                      "id": 4] as [String: Any]
+                      "id": USER.id] as [String: Any]
         params["params"] = ["versionApi": "1",
                             "regionID": regionID,
                             "filter": ["test": "123"]].jsonString()

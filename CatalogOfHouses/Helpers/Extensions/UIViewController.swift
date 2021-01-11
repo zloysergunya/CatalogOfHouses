@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    func setupMiddleImageView() {
+    func setupMiddleNavigationImageView() {
         let middleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 38))
         middleImageView.image = UIImage(named: "logo")
         middleImageView.contentMode = .scaleAspectFit

@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="CatalogOfHouses" customModuleProvider="target">
             <connections>
                 <outlet property="regionsTable" destination="YVX-zj-BDN" id="Twg-DE-Kdz"/>
+                <outlet property="searchBar" destination="icL-qW-6iv" id="23L-e7-evj"/>
                 <outlet property="totalSquareButton" destination="p66-Af-lF0" id="cHZ-LT-xbE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

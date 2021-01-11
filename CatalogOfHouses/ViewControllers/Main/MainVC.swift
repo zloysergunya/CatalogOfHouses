@@ -11,6 +11,7 @@ import RealmSwift
 class MainVC: UIViewController {
     @IBOutlet weak var regionsTable: UITableView!
     @IBOutlet weak var totalSquareButton: RoundButton!
+    @IBOutlet weak var searchBar: RoundField!
     
     private let dataProvider = MainDataProvider()
     private var regions: Results<Region>!
@@ -26,6 +27,7 @@ class MainVC: UIViewController {
     }
     
     private func setupUI() {
+        searchBar.delegate = self
         setupTableView(regionsTable)
         setupNavigationBar()
         dataProvider.updateRegions() { [weak self] status in
@@ -39,7 +41,7 @@ class MainVC: UIViewController {
     }
     
     private func setupNavigationBar() {
-        setupMiddleImageView()
+        setupMiddleNavigationImageView()
         
         let leftButton = UIButton(type: .system)
         leftButton.addTarget(self, action: #selector(exitToAuth), for: .touchUpInside)
@@ -87,5 +89,15 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let vc = CitiesVC(nibName: "CitiesVC", bundle: nil)
         vc.regionID = regions[indexPath.row].regionID
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+// MARK: - work with textField
+extension MainVC: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == searchBar {
+            let vc = SearchVC(nibName: "SearchVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

@@ -7,6 +7,12 @@
 
 import RealmSwift
 
+var USER: User! {
+    get {
+        try! Realm().objects(User.self).first!
+    }
+}
+
 class AuthDataProvider {
     let realM = try! Realm()
     

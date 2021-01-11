@@ -28,8 +28,7 @@ class PinCodeVC: UIViewController {
     }
 
     private func setupUI() {
-        let profileDataProvider = ProfileDataProvider()
-        fioLabel.text = profileDataProvider.getUser().name
+        fioLabel.text = USER.name
         localPinCode = ""
         setupBiometricButton()
     }

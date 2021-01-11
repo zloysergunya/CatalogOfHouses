@@ -12,7 +12,7 @@ class MainDataProvider {
     
     func updateRegions(completion: @escaping (_ status: Int) -> Void) {
         var params = ["action": "GetRegions",
-                      "id": 4] as [String: Any]
+                      "id": USER.id] as [String: Any]
         params["params"] = ["versionApi": "1",
                             "filter": ["test": "123"]].jsonString()
         NetworkManager(params: params) { data, status in

@@ -20,6 +20,6 @@ class AboutAppVC: UIViewController {
     }
     
     private func setupNavigationBar() {
-        setupMiddleImageView()
+        setupMiddleNavigationImageView()
     }
 }
