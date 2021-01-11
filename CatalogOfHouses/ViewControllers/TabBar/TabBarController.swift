@@ -32,6 +32,7 @@ class TabBarController: UITabBarController {
         tabBar.unselectedItemTintColor = .white
         tabBar.layer.cornerRadius = 15
         tabBar.layer.masksToBounds = true
+        tabBar.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         tabBar.isTranslucent = true
         tabBar.alpha = 0.95
         

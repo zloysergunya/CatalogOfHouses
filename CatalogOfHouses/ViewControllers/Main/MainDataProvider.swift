@@ -36,6 +36,14 @@ class MainDataProvider {
         return realM.objects(Region.self)
     }
     
+    func getTotalRegionsSquare() -> Double {
+        var square: Double = 0
+        getRegions().forEach { region in
+            square += region.totalSquare
+        }
+        return square
+    }
+    
     func deteleAll() {
         AUTH_TOKEN = nil
         PINCODE = nil
@@ -44,11 +52,5 @@ class MainDataProvider {
         }
     }
     
-    func getTotalSquare() -> Double {
-        var square: Double = 0
-        getRegions().forEach { region in
-            square += region.totalSquare
-        }
-        return square
-    }
+    
 }

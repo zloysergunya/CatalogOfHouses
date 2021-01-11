@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="CatalogOfHouses" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroungLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-wj-ncc">
+                    <rect key="frame" x="80.5" y="549" width="253" height="263"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="Hq0-5s-fhg"/>
+                        <constraint firstAttribute="width" constant="253" id="g1K-yi-g4r"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WOz-fv-2yw">
+                    <rect key="frame" x="0.0" y="166" width="414" height="730"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maP-tv-wRu">
+                    <rect key="frame" x="0.0" y="110" width="414" height="1"/>
+                    <color key="backgroundColor" name="grayMainColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iLj-rg-UcT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDM-ey-7w9">
+                    <rect key="frame" x="0.0" y="111" width="414" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат поиска" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZh-So-cKM">
+                            <rect key="frame" x="32" y="16" width="150" height="21.5"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S2-rL-jkm">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" name="grayMainColor"/>
+                            <color key="tintColor" name="grayMainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="TbQ-dv-NXa"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xA-e8-bfC">
+                            <rect key="frame" x="0.0" y="54" width="414" height="1"/>
+                            <color key="backgroundColor" name="orangeMainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Onb-i5-i57"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6S2-rL-jkm" firstAttribute="top" secondItem="qDM-ey-7w9" secondAttribute="top" id="4in-qi-LxW"/>
+                        <constraint firstItem="uZh-So-cKM" firstAttribute="top" secondItem="6S2-rL-jkm" secondAttribute="bottom" constant="15" id="GUI-kx-KCL"/>
+                        <constraint firstAttribute="trailing" secondItem="6S2-rL-jkm" secondAttribute="trailing" id="KYN-tO-tlP"/>
+                        <constraint firstAttribute="trailing" secondItem="8xA-e8-bfC" secondAttribute="trailing" id="SNO-oS-rYb"/>
+                        <constraint firstItem="8xA-e8-bfC" firstAttribute="leading" secondItem="qDM-ey-7w9" secondAttribute="leading" id="SWR-QH-G3t"/>
+                        <constraint firstItem="uZh-So-cKM" firstAttribute="leading" secondItem="qDM-ey-7w9" secondAttribute="leading" constant="32" id="UCZ-Cs-1zb"/>
+                        <constraint firstItem="8xA-e8-bfC" firstAttribute="top" secondItem="uZh-So-cKM" secondAttribute="bottom" constant="16.5" id="YnS-MU-ceN"/>
+                        <constraint firstItem="6S2-rL-jkm" firstAttribute="leading" secondItem="qDM-ey-7w9" secondAttribute="leading" id="bc1-EC-CkA"/>
+                        <constraint firstAttribute="height" constant="55" id="kkD-Fc-GTe"/>
+                        <constraint firstAttribute="bottom" secondItem="8xA-e8-bfC" secondAttribute="bottom" id="qxu-j1-MY6"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eub-DA-A5I" customClass="RoundField" customModule="CatalogOfHouses" customModuleProvider="target">
+                    <rect key="frame" x="16" y="60" width="382" height="34"/>
+                    <color key="backgroundColor" name="grayMainColor"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="magnifyingglass" catalog="system"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="blackMainColor"/>
+            <constraints>
+                <constraint firstItem="WOz-fv-2yw" firstAttribute="top" secondItem="qDM-ey-7w9" secondAttribute="bottom" id="16S-Dg-OKp"/>
+                <constraint firstItem="qDM-ey-7w9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2gC-qk-wsH"/>
+                <constraint firstItem="eub-DA-A5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Coo-nE-8el"/>
+                <constraint firstItem="eub-DA-A5I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Guk-Hx-5bK"/>
+                <constraint firstItem="maP-tv-wRu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NDy-aI-Aqj"/>
+                <constraint firstItem="Rk4-wj-ncc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NeI-xT-4DB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rk4-wj-ncc" secondAttribute="bottom" constant="50" id="Obp-Ua-qIG"/>
+                <constraint firstItem="WOz-fv-2yw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ogf-QD-V2c"/>
+                <constraint firstItem="qDM-ey-7w9" firstAttribute="top" secondItem="maP-tv-wRu" secondAttribute="bottom" id="PED-3v-DjP"/>
+                <constraint firstItem="qDM-ey-7w9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QHi-fJ-6MT"/>
+                <constraint firstAttribute="bottom" secondItem="WOz-fv-2yw" secondAttribute="bottom" id="R65-MR-DpH"/>
+                <constraint firstAttribute="trailing" secondItem="maP-tv-wRu" secondAttribute="trailing" id="bhf-Fi-Vv6"/>
+                <constraint firstItem="WOz-fv-2yw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ci7-rs-jcM"/>
+                <constraint firstItem="maP-tv-wRu" firstAttribute="top" secondItem="eub-DA-A5I" secondAttribute="bottom" constant="16" id="eOV-2t-uhz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eub-DA-A5I" secondAttribute="trailing" constant="16" id="wB7-sh-MbU"/>
+            </constraints>
+            <point key="canvasLocation" x="-51" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroungLogo" width="253.5" height="263.5"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="blackMainColor">
+            <color red="0.063000001013278961" green="0.063000001013278961" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayMainColor">
+            <color red="0.31400001049041748" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orangeMainColor">
+            <color red="0.91399997472763062" green="0.64300000667572021" blue="0.42399999499320984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="CatalogOfHouses" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitiesVC" customModule="CatalogOfHouses" customModuleProvider="target">
             <connections>
-                <outlet property="regionsTable" destination="YVX-zj-BDN" id="Twg-DE-Kdz"/>
-                <outlet property="totalSquareButton" destination="p66-Af-lF0" id="cHZ-LT-xbE"/>
+                <outlet property="citiesTable" destination="YVX-zj-BDN" id="UCm-eW-Rdd"/>
+                <outlet property="totalSquareButton" destination="p66-Af-lF0" id="arY-lG-WHy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -135,8 +135,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXI-Zw-Spw">
                     <rect key="frame" x="0.0" y="271" width="414" height="55"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регионы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-uA-YbY">
-                            <rect key="frame" x="32" y="16" width="72.5" height="21.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Города" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-uA-YbY">
+                            <rect key="frame" x="32" y="16" width="62" height="21.5"/>
                             <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>

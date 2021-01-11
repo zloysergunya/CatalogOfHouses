@@ -51,7 +51,7 @@ class MainVC: UIViewController {
     }
     
     private func updateUI() {
-        totalSquareButton.setTitle("\(dataProvider.getTotalSquare()) кв.м.", for: .normal)
+        totalSquareButton.setTitle("\(dataProvider.getTotalRegionsSquare()) кв.м.", for: .normal)
         regions = dataProvider.getRegions()
         regionsTable.reloadData()
     }
@@ -79,7 +79,13 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
-        cell.setupCell(with: regions[indexPath.row])
+        cell.setupCell(name: regions[indexPath.row].regionName, totalSquare: regions[indexPath.row].totalSquare)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CitiesVC(nibName: "CitiesVC", bundle: nil)
+        vc.regionID = regions[indexPath.row].regionID
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

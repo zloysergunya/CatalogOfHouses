@@ -18,6 +18,13 @@
 		C4525AA325A59C010026E63F /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4525AA225A59C010026E63F /* SF-Pro-Display-LightItalic.otf */; };
 		C4525AA825A5A3C90026E63F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4525AA625A5A3C90026E63F /* ProfileVC.swift */; };
 		C4525AA925A5A3C90026E63F /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4525AA725A5A3C90026E63F /* ProfileVC.xib */; };
+		C469A4BA25ABF8CC002817CE /* CitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469A4B825ABF8CC002817CE /* CitiesVC.swift */; };
+		C469A4BB25ABF8CC002817CE /* CitiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C469A4B925ABF8CC002817CE /* CitiesVC.xib */; };
+		C469A4BE25ABF9B4002817CE /* CitiesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469A4BD25ABF9B4002817CE /* CitiesDataProvider.swift */; };
+		C469A4C525ABFD3B002817CE /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469A4C425ABFD3B002817CE /* City.swift */; };
+		C469A4CB25AC07DA002817CE /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469A4C925AC07DA002817CE /* SearchVC.swift */; };
+		C469A4CC25AC07DA002817CE /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C469A4CA25AC07DA002817CE /* SearchVC.xib */; };
+		C469A4D225AC091A002817CE /* SearchDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469A4D125AC091A002817CE /* SearchDataProvider.swift */; };
 		C48D5EB225AAF97800E6E564 /* PinCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48D5EB025AAF97800E6E564 /* PinCodeVC.xib */; };
 		C48D5EB325AAF97800E6E564 /* PinCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D5EB125AAF97800E6E564 /* PinCodeVC.swift */; };
 		C48D5EB725AB163A00E6E564 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D5EB625AB163A00E6E564 /* UIImageView.swift */; };
@@ -67,6 +74,13 @@
 		C4525AA225A59C010026E63F /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
 		C4525AA625A5A3C90026E63F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C4525AA725A5A3C90026E63F /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		C469A4B825ABF8CC002817CE /* CitiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesVC.swift; sourceTree = "<group>"; };
+		C469A4B925ABF8CC002817CE /* CitiesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitiesVC.xib; sourceTree = "<group>"; };
+		C469A4BD25ABF9B4002817CE /* CitiesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesDataProvider.swift; sourceTree = "<group>"; };
+		C469A4C425ABFD3B002817CE /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		C469A4C925AC07DA002817CE /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		C469A4CA25AC07DA002817CE /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		C469A4D125AC091A002817CE /* SearchDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataProvider.swift; sourceTree = "<group>"; };
 		C48D5EB025AAF97800E6E564 /* PinCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinCodeVC.xib; sourceTree = "<group>"; };
 		C48D5EB125AAF97800E6E564 /* PinCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeVC.swift; sourceTree = "<group>"; };
 		C48D5EB625AB163A00E6E564 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -165,8 +179,9 @@
 		C40C645125A42C3F00AF6CEA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C4A9C5D525AA11C7002BB4FF /* User.swift */,
+				C469A4C425ABFD3B002817CE /* City.swift */,
 				C4A9C5DE25AA171F002BB4FF /* Region.swift */,
+				C4A9C5D525AA11C7002BB4FF /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,11 +191,13 @@
 			children = (
 				C4BA0E4325A43ED000E42008 /* AboutApp */,
 				C40C645625A42C7000AF6CEA /* Auth */,
+				C469A4B025ABF84F002817CE /* Cities */,
 				C4A11E8525A6F00E00C33AB4 /* Home */,
 				C40C645425A42C5300AF6CEA /* LaunchScreen */,
 				C40C645825A42C8600AF6CEA /* Main */,
 				C40C645725A42C7400AF6CEA /* PinCode */,
 				C4525AA525A5A3B00026E63F /* Profile */,
+				C469A4CE25AC07DE002817CE /* Search */,
 				C40C645925A42C8D00AF6CEA /* TabBar */,
 			);
 			path = ViewControllers;
@@ -242,6 +259,34 @@
 				C4A9C5DB25AA1523002BB4FF /* ProfileDataProvider.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		C469A4B025ABF84F002817CE /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				C469A4B825ABF8CC002817CE /* CitiesVC.swift */,
+				C469A4B925ABF8CC002817CE /* CitiesVC.xib */,
+				C469A4BD25ABF9B4002817CE /* CitiesDataProvider.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		C469A4CE25AC07DE002817CE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C469A4D025AC0901002817CE /* Cells */,
+				C469A4C925AC07DA002817CE /* SearchVC.swift */,
+				C469A4CA25AC07DA002817CE /* SearchVC.xib */,
+				C469A4D125AC091A002817CE /* SearchDataProvider.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C469A4D025AC0901002817CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C4A11E8525A6F00E00C33AB4 /* Home */ = {
@@ -406,6 +451,8 @@
 				C4BA0E3425A4350400E42008 /* SF-Pro-Display-Regular.otf in Resources */,
 				C40C644425A42BE800AF6CEA /* Assets.xcassets in Resources */,
 				C4BA0E3725A4350400E42008 /* SF-Pro-Display-Heavy.otf in Resources */,
+				C469A4CC25AC07DA002817CE /* SearchVC.xib in Resources */,
+				C469A4BB25ABF8CC002817CE /* CitiesVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,8 +511,12 @@
 				C4A9C5DF25AA171F002BB4FF /* Region.swift in Sources */,
 				C4D3491625A8B8880049C67B /* MainDataProvider.swift in Sources */,
 				C4BA0E4625A43EE400E42008 /* AboutAppVC.swift in Sources */,
+				C469A4C525ABFD3B002817CE /* City.swift in Sources */,
+				C469A4BA25ABF8CC002817CE /* CitiesVC.swift in Sources */,
 				C48D5EB725AB163A00E6E564 /* UIImageView.swift in Sources */,
 				C4BA0E2425A4313000E42008 /* UIColor.swift in Sources */,
+				C469A4CB25AC07DA002817CE /* SearchVC.swift in Sources */,
+				C469A4BE25ABF9B4002817CE /* CitiesDataProvider.swift in Sources */,
 				C4C54EC225A8376800CFE0E3 /* AuthDataProvider.swift in Sources */,
 				C4BA0E3F25A43A8700E42008 /* MainCell.swift in Sources */,
 				C4A9C5D925AA136F002BB4FF /* Data.swift in Sources */,
@@ -476,6 +527,7 @@
 				C4C54EBE25A8374700CFE0E3 /* AuthVC.swift in Sources */,
 				C40C646225A42D0200AF6CEA /* MainVC.swift in Sources */,
 				C48D5EB325AAF97800E6E564 /* PinCodeVC.swift in Sources */,
+				C469A4D225AC091A002817CE /* SearchDataProvider.swift in Sources */,
 				C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */,
 				C40C645C25A42CCA00AF6CEA /* TabBarController.swift in Sources */,
 				C4C54EB725A8308500CFE0E3 /* HomeVC.swift in Sources */,

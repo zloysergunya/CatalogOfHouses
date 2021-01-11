@@ -11,10 +11,10 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var regionNameLabel: UILabel!
     @IBOutlet weak var totalSquareLabel: UILabel!
     
-    func setupCell(with region: Region) {
+    func setupCell(name: String, totalSquare: Double) {
         selectionStyle = .none
-        regionNameLabel.text = region.regionName
-        totalSquareLabel.text = "\(region.totalSquare) кв.м."
+        regionNameLabel.text = name
+        totalSquareLabel.text = "\(totalSquare) кв.м."
     }
     
 }

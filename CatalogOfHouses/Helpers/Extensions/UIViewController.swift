@@ -13,6 +13,7 @@ extension UIViewController {
         middleImageView.image = UIImage(named: "logo")
         middleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = middleImageView
+        navigationItem.backButtonTitle = ""
     }
     
     func popAllViewControllers(animated: Bool, completion: (()->())?) {
