@@ -32,7 +32,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoZ-ro-AOv" customClass="RoundLabel" customModule="CatalogOfHouses" customModuleProvider="target">
-                    <rect key="frame" x="16" y="113" width="382" height="339.5"/>
+                    <rect key="frame" x="16" y="113" width="382" height="331.5"/>
                     <color key="backgroundColor" name="grayMainColor"/>
                     <attributedString key="attributedText">
                         <fragment>
@@ -49,12 +49,13 @@ hdC+0LvQtNC40L3Qsywg0L3QsCDRgtC10LrRg9GJ0YPRjiDQtNCw0YLRgyAo0L/QviDRg9C80L7Qu9GH
 INGE0LjQu9GM0YLRgNCw0LzQuC4KCtCU0LvRjyDQv9C+0LvRg9GH0LXQvdC40Y8g0LTQtdGC0LDQu9GM
 0L3QvtC5INC40L3RhNC+0YDQvNCw0YbQuNC4INC/0L4g0L7RgtC00LXQu9GM0L3QvtC80YMg0LTQvtC8
 0YMg0L/RgNC10LTRg9GB0LzQvtGC0YDQtdC90LAg0LLQvtC30LzQvtC20L3QvtGB0YLRjCDQv9C+0LjR
-gdC60LAuA
+gdC60LAuCg
 </mutableString>
                             <attributes>
-                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <font key="NSFont" size="14" name="SFProDisplay-LightItalic"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                             </attributes>
                         </fragment>
                     </attributedString>
@@ -92,7 +93,7 @@ gdC60LAuA
     </objects>
     <designables>
         <designable name="CoZ-ro-AOv">
-            <size key="intrinsicContentSize" width="1608" height="145.5"/>
+            <size key="intrinsicContentSize" width="1608" height="162"/>
         </designable>
     </designables>
     <resources>

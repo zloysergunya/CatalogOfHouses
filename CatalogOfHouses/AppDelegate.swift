@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let manager = IQKeyboardManager.shared
         manager.enable = true
         manager.toolbarTintColor = .orangeMainColor
-        manager.toolbarDoneBarButtonItemText = "Готово"
+        manager.toolbarDoneBarButtonItemText = "Скрыть"
         manager.placeholderColor = .white
         manager.toolbarBarTintColor = .blackMainColor
     }

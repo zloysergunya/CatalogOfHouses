@@ -30,6 +30,10 @@
 		C48D5EB225AAF97800E6E564 /* PinCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48D5EB025AAF97800E6E564 /* PinCodeVC.xib */; };
 		C48D5EB325AAF97800E6E564 /* PinCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D5EB125AAF97800E6E564 /* PinCodeVC.swift */; };
 		C48D5EB725AB163A00E6E564 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D5EB625AB163A00E6E564 /* UIImageView.swift */; };
+		C49362AF25AEABAB0066530C /* UKDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362AC25AEABAB0066530C /* UKDataProvider.swift */; };
+		C49362B025AEABAB0066530C /* UKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49362AD25AEABAB0066530C /* UKVC.xib */; };
+		C49362B125AEABAB0066530C /* UKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362AE25AEABAB0066530C /* UKVC.swift */; };
+		C49362B425AEAC010066530C /* UK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362B325AEAC010066530C /* UK.swift */; };
 		C4A11E8925A6F03D00C33AB4 /* HomeSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A11E8725A6F03D00C33AB4 /* HomeSettingsVC.swift */; };
 		C4A11E8A25A6F03D00C33AB4 /* HomeSettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A11E8825A6F03D00C33AB4 /* HomeSettingsVC.xib */; };
 		C4A9C5CD25AA0747002BB4FF /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9C5CB25AA0747002BB4FF /* LaunchScreen.swift */; };
@@ -88,6 +92,10 @@
 		C48D5EB025AAF97800E6E564 /* PinCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinCodeVC.xib; sourceTree = "<group>"; };
 		C48D5EB125AAF97800E6E564 /* PinCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeVC.swift; sourceTree = "<group>"; };
 		C48D5EB625AB163A00E6E564 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		C49362AC25AEABAB0066530C /* UKDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UKDataProvider.swift; sourceTree = "<group>"; };
+		C49362AD25AEABAB0066530C /* UKVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UKVC.xib; sourceTree = "<group>"; };
+		C49362AE25AEABAB0066530C /* UKVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UKVC.swift; sourceTree = "<group>"; };
+		C49362B325AEAC010066530C /* UK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK.swift; sourceTree = "<group>"; };
 		C4A11E8725A6F03D00C33AB4 /* HomeSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettingsVC.swift; sourceTree = "<group>"; };
 		C4A11E8825A6F03D00C33AB4 /* HomeSettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSettingsVC.xib; sourceTree = "<group>"; };
 		C4A9C5CB25AA0747002BB4FF /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -186,6 +194,7 @@
 				C469A4C425ABFD3B002817CE /* City.swift */,
 				C4A9C5DE25AA171F002BB4FF /* Region.swift */,
 				C4A9C5D525AA11C7002BB4FF /* User.swift */,
+				C49362B325AEAC010066530C /* UK.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 				C4525AA525A5A3B00026E63F /* Profile */,
 				C469A4CE25AC07DE002817CE /* Search */,
 				C40C645925A42C8D00AF6CEA /* TabBar */,
+				C49362AB25AEAB630066530C /* UK */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -293,6 +303,16 @@
 				C469A4D725AC13DB002817CE /* SearchCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C49362AB25AEAB630066530C /* UK */ = {
+			isa = PBXGroup;
+			children = (
+				C49362AC25AEABAB0066530C /* UKDataProvider.swift */,
+				C49362AE25AEABAB0066530C /* UKVC.swift */,
+				C49362AD25AEABAB0066530C /* UKVC.xib */,
+			);
+			path = UK;
 			sourceTree = "<group>";
 		};
 		C4A11E8525A6F00E00C33AB4 /* Home */ = {
@@ -447,6 +467,7 @@
 				C4BA0E3325A4350400E42008 /* SF-Pro-Display-Light.otf in Resources */,
 				C4A11E8A25A6F03D00C33AB4 /* HomeSettingsVC.xib in Resources */,
 				C4525AA925A5A3C90026E63F /* ProfileVC.xib in Resources */,
+				C49362B025AEABAB0066530C /* UKVC.xib in Resources */,
 				C40C646325A42D0200AF6CEA /* MainVC.xib in Resources */,
 				C40C645D25A42CCA00AF6CEA /* TabBarController.xib in Resources */,
 				C469A4D925AC13DB002817CE /* SearchCell.xib in Resources */,
@@ -516,10 +537,12 @@
 				C4A9C5DC25AA1523002BB4FF /* ProfileDataProvider.swift in Sources */,
 				C40C643B25A42BE600AF6CEA /* AppDelegate.swift in Sources */,
 				C4A9C5DF25AA171F002BB4FF /* Region.swift in Sources */,
+				C49362B125AEABAB0066530C /* UKVC.swift in Sources */,
 				C4D3491625A8B8880049C67B /* MainDataProvider.swift in Sources */,
 				C4BA0E4625A43EE400E42008 /* AboutAppVC.swift in Sources */,
 				C469A4C525ABFD3B002817CE /* City.swift in Sources */,
 				C469A4BA25ABF8CC002817CE /* CitiesVC.swift in Sources */,
+				C49362B425AEAC010066530C /* UK.swift in Sources */,
 				C48D5EB725AB163A00E6E564 /* UIImageView.swift in Sources */,
 				C4BA0E2425A4313000E42008 /* UIColor.swift in Sources */,
 				C469A4CB25AC07DA002817CE /* SearchVC.swift in Sources */,
@@ -536,6 +559,7 @@
 				C40C646225A42D0200AF6CEA /* MainVC.swift in Sources */,
 				C48D5EB325AAF97800E6E564 /* PinCodeVC.swift in Sources */,
 				C469A4D225AC091A002817CE /* SearchDataProvider.swift in Sources */,
+				C49362AF25AEABAB0066530C /* UKDataProvider.swift in Sources */,
 				C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */,
 				C40C645C25A42CCA00AF6CEA /* TabBarController.swift in Sources */,
 				C4C54EB725A8308500CFE0E3 /* HomeVC.swift in Sources */,

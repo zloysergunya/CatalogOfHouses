@@ -67,4 +67,10 @@ extension CitiesVC: UITableViewDelegate, UITableViewDataSource {
         cell.setupCell(name: cities[indexPath.row].cityName, totalSquare: cities[indexPath.row].totalSquare)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UKVC(nibName: "UKVC", bundle: nil)
+        vc.cityID = cities[indexPath.row].cityID
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
