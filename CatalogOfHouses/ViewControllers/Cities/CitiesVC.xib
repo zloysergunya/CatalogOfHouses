@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitiesVC" customModule="CatalogOfHouses" customModuleProvider="target">
             <connections>
                 <outlet property="citiesTable" destination="YVX-zj-BDN" id="UCm-eW-Rdd"/>
+                <outlet property="regionNameButton" destination="nR7-0n-u6X" id="WAj-CJ-vcu"/>
                 <outlet property="totalSquareButton" destination="p66-Af-lF0" id="arY-lG-WHy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -61,7 +62,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-Fy-O8S">
-                    <rect key="frame" x="16" y="127" width="382" height="112"/>
+                    <rect key="frame" x="16" y="127" width="382" height="172"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmQ-AN-NNi" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="52"/>
@@ -110,9 +111,9 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR7-0n-u6X" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="112" width="382" height="52"/>
-                            <color key="backgroundColor" name="grayMainColor"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR7-0n-u6X" customClass="RoundButton" customModule="CatalogOfHouses" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="120" width="382" height="52"/>
+                            <color key="backgroundColor" name="darkMainColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="hId-Me-Zs2"/>
                             </constraints>
@@ -133,7 +134,7 @@
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXI-Zw-Spw">
-                    <rect key="frame" x="0.0" y="271" width="414" height="55"/>
+                    <rect key="frame" x="0.0" y="331" width="414" height="55"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Города" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-uA-YbY">
                             <rect key="frame" x="32" y="16" width="62" height="21.5"/>
@@ -183,7 +184,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YVX-zj-BDN">
-                    <rect key="frame" x="0.0" y="326" width="414" height="570"/>
+                    <rect key="frame" x="0.0" y="386" width="414" height="510"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
@@ -218,6 +219,9 @@
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <namedColor name="blackMainColor">
             <color red="0.063000001013278961" green="0.063000001013278961" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkMainColor">
+            <color red="0.093999996781349182" green="0.093999996781349182" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="grayMainColor">
             <color red="0.31400001049041748" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

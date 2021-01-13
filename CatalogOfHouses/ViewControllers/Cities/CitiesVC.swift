@@ -11,6 +11,7 @@ import RealmSwift
 class CitiesVC: UIViewController {
     @IBOutlet weak var citiesTable: UITableView!
     @IBOutlet weak var totalSquareButton: RoundButton!
+    @IBOutlet weak var regionNameButton: RoundButton!
     
     private let dataProvider = CitiesDataProvider()
     private var cities: Results<City>!
@@ -36,6 +37,9 @@ class CitiesVC: UIViewController {
             } else {
                 self.updateUI()
             }
+        }
+        if let regionName = dataProvider.getRegionName(regionID: regionID) {
+            regionNameButton.setTitle(regionName, for: .normal)
         }
     }
     

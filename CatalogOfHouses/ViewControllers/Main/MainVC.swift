@@ -96,6 +96,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
 extension MainVC: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == searchBar {
+            searchBar.endEditing(false)
             let vc = SearchVC(nibName: "SearchVC", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
         }

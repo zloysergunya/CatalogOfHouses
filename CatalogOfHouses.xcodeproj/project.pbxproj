@@ -34,6 +34,10 @@
 		C49362B025AEABAB0066530C /* UKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49362AD25AEABAB0066530C /* UKVC.xib */; };
 		C49362B125AEABAB0066530C /* UKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362AE25AEABAB0066530C /* UKVC.swift */; };
 		C49362B425AEAC010066530C /* UK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362B325AEAC010066530C /* UK.swift */; };
+		C49362B725AEB7CD0066530C /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362B625AEB7CD0066530C /* Street.swift */; };
+		C49362BD25AEB8640066530C /* StreetsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49362BA25AEB8630066530C /* StreetsVC.xib */; };
+		C49362BE25AEB8640066530C /* StreetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362BB25AEB8630066530C /* StreetsVC.swift */; };
+		C49362BF25AEB8640066530C /* StreetsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49362BC25AEB8630066530C /* StreetsDataProvider.swift */; };
 		C4A11E8925A6F03D00C33AB4 /* HomeSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A11E8725A6F03D00C33AB4 /* HomeSettingsVC.swift */; };
 		C4A11E8A25A6F03D00C33AB4 /* HomeSettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A11E8825A6F03D00C33AB4 /* HomeSettingsVC.xib */; };
 		C4A9C5CD25AA0747002BB4FF /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9C5CB25AA0747002BB4FF /* LaunchScreen.swift */; };
@@ -96,6 +100,10 @@
 		C49362AD25AEABAB0066530C /* UKVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UKVC.xib; sourceTree = "<group>"; };
 		C49362AE25AEABAB0066530C /* UKVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UKVC.swift; sourceTree = "<group>"; };
 		C49362B325AEAC010066530C /* UK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK.swift; sourceTree = "<group>"; };
+		C49362B625AEB7CD0066530C /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		C49362BA25AEB8630066530C /* StreetsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreetsVC.xib; sourceTree = "<group>"; };
+		C49362BB25AEB8630066530C /* StreetsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetsVC.swift; sourceTree = "<group>"; };
+		C49362BC25AEB8630066530C /* StreetsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetsDataProvider.swift; sourceTree = "<group>"; };
 		C4A11E8725A6F03D00C33AB4 /* HomeSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettingsVC.swift; sourceTree = "<group>"; };
 		C4A11E8825A6F03D00C33AB4 /* HomeSettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSettingsVC.xib; sourceTree = "<group>"; };
 		C4A9C5CB25AA0747002BB4FF /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -195,6 +203,7 @@
 				C4A9C5DE25AA171F002BB4FF /* Region.swift */,
 				C4A9C5D525AA11C7002BB4FF /* User.swift */,
 				C49362B325AEAC010066530C /* UK.swift */,
+				C49362B625AEB7CD0066530C /* Street.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 				C40C645725A42C7400AF6CEA /* PinCode */,
 				C4525AA525A5A3B00026E63F /* Profile */,
 				C469A4CE25AC07DE002817CE /* Search */,
+				C49362B925AEB8310066530C /* Streets */,
 				C40C645925A42C8D00AF6CEA /* TabBar */,
 				C49362AB25AEAB630066530C /* UK */,
 			);
@@ -313,6 +323,16 @@
 				C49362AD25AEABAB0066530C /* UKVC.xib */,
 			);
 			path = UK;
+			sourceTree = "<group>";
+		};
+		C49362B925AEB8310066530C /* Streets */ = {
+			isa = PBXGroup;
+			children = (
+				C49362BC25AEB8630066530C /* StreetsDataProvider.swift */,
+				C49362BB25AEB8630066530C /* StreetsVC.swift */,
+				C49362BA25AEB8630066530C /* StreetsVC.xib */,
+			);
+			path = Streets;
 			sourceTree = "<group>";
 		};
 		C4A11E8525A6F00E00C33AB4 /* Home */ = {
@@ -473,6 +493,7 @@
 				C469A4D925AC13DB002817CE /* SearchCell.xib in Resources */,
 				C4C54EBF25A8374700CFE0E3 /* AuthVC.xib in Resources */,
 				C4BA0E3525A4350400E42008 /* SF-Pro-Display-Bold.otf in Resources */,
+				C49362BD25AEB8640066530C /* StreetsVC.xib in Resources */,
 				C4A9C5CE25AA0747002BB4FF /* LaunchScreen.xib in Resources */,
 				C4C54EB825A8308500CFE0E3 /* HomeVC.xib in Resources */,
 				C4BA0E4725A43EE400E42008 /* AboutAppVC.xib in Resources */,
@@ -536,6 +557,7 @@
 				C4C54ED925A8386700CFE0E3 /* UIViewController.swift in Sources */,
 				C4A9C5DC25AA1523002BB4FF /* ProfileDataProvider.swift in Sources */,
 				C40C643B25A42BE600AF6CEA /* AppDelegate.swift in Sources */,
+				C49362BF25AEB8640066530C /* StreetsDataProvider.swift in Sources */,
 				C4A9C5DF25AA171F002BB4FF /* Region.swift in Sources */,
 				C49362B125AEABAB0066530C /* UKVC.swift in Sources */,
 				C4D3491625A8B8880049C67B /* MainDataProvider.swift in Sources */,
@@ -562,7 +584,9 @@
 				C49362AF25AEABAB0066530C /* UKDataProvider.swift in Sources */,
 				C4BA0E2825A4337900E42008 /* IBDesignable.swift in Sources */,
 				C40C645C25A42CCA00AF6CEA /* TabBarController.swift in Sources */,
+				C49362BE25AEB8640066530C /* StreetsVC.swift in Sources */,
 				C4C54EB725A8308500CFE0E3 /* HomeVC.swift in Sources */,
+				C49362B725AEB7CD0066530C /* Street.swift in Sources */,
 				C41B558E25A6020900341A2B /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

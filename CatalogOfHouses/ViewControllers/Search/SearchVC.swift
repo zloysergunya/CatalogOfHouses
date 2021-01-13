@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class SearchVC: UIViewController {
     @IBOutlet weak var searchBar: RoundField!
@@ -21,6 +22,7 @@ class SearchVC: UIViewController {
     
     private func setupUI() {
         setupTableView(searchTable)
+        IQKeyboardManager.shared.enable = false
         searchBar.delegate = self
         searchBar.becomeFirstResponder()
         setupMiddleNavigationImageView()

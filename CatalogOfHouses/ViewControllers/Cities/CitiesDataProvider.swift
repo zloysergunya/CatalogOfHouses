@@ -44,4 +44,8 @@ class CitiesDataProvider {
         }
         return square
     }
+    
+    func getRegionName(regionID: String) -> String? {
+        realM.objects(Region.self).filter("regionID == %@", regionID).first?.regionName
+    }
 }
