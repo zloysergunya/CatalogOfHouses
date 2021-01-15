@@ -73,8 +73,14 @@ extension CitiesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UKVC(nibName: "UKVC", bundle: nil)
-        vc.cityID = cities[indexPath.row].cityID
-        self.navigationController?.pushViewController(vc, animated: true)
+        if isSortingByUKEnabled {
+            let vc = UKVC(nibName: "UKVC", bundle: nil)
+            vc.cityID = cities[indexPath.row].cityID
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let vc = StreetsVC(nibName: "StreetsVC", bundle: nil)
+            vc.cityID = cities[indexPath.row].cityID
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

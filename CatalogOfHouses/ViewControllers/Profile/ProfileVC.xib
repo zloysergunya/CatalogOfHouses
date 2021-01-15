@@ -26,6 +26,7 @@
                 <outlet property="biometricsSwitch" destination="O16-RP-v4h" id="LJv-eu-Nfn"/>
                 <outlet property="fioLabel" destination="ud5-pd-VaD" id="GPe-4q-AGa"/>
                 <outlet property="infoDateLabel" destination="7B0-yb-gnb" id="cVF-oP-GlR"/>
+                <outlet property="sortingByUKSwitch" destination="70m-al-kUq" id="hXE-xM-uRn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -198,6 +199,9 @@
                             <subviews>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70m-al-kUq">
                                     <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="switchSortingByUK:" destination="-1" eventType="valueChanged" id="0VG-Zb-7uS"/>
+                                    </connections>
                                 </switch>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Включить сортировку по УК" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p67-LN-TXu">
                                     <rect key="frame" x="16" y="15.5" width="285" height="14"/>
