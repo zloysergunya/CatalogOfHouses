@@ -29,6 +29,7 @@ class SearchVC: UIViewController {
     }
 }
 
+// MARK: - work with tableView
 extension SearchVC: UITableViewDelegate, UITableViewDataSource {
     private func setupTableView(_ tableView: UITableView) {
         tableView.delegate = self

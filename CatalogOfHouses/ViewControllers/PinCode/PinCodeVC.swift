@@ -14,6 +14,17 @@ var PINCODE: String? {
     get { return UserDefaults.standard.string(forKey: "pincode") }
 }
 
+var isBiometricsEnabled: Bool {
+    set { UserDefaults.standard.setValue(newValue, forKey: "isBiometricsEnabled") }
+    get { return UserDefaults.standard.bool(forKey: "isBiometricsEnabled") }
+}
+
+var biometricsName: String? {
+    set { if let v = newValue { UserDefaults.standard.setValue(v, forKey: "biometricsName") }
+          else { UserDefaults.standard.removeObject(forKey: "biometricsName") }}
+    get { return UserDefaults.standard.string(forKey: "biometricsName") }
+}
+
 class PinCodeVC: UIViewController {
     @IBOutlet weak var fioLabel: UILabel!
     @IBOutlet weak var changeUserButton: UIButton!
@@ -34,7 +45,7 @@ class PinCodeVC: UIViewController {
     }
     
     private func setupBiometricButton() {
-        if PINCODE != nil, let isTouchIDAvailable = isTouchIDAvailable() {
+        if let isTouchIDAvailable = isTouchIDAvailable(), isBiometricsEnabled, PINCODE != nil {
             biometricButton.alpha = 1
             biometricButton.setImage(UIImage(systemName: isTouchIDAvailable ? "touchid" : "faceid"), for: .normal)
         } else {
@@ -80,17 +91,20 @@ class PinCodeVC: UIViewController {
 
 // MARK: - work with biometric
 extension PinCodeVC {
-    private func isTouchIDAvailable() -> Bool? {
+    func isTouchIDAvailable() -> Bool? {
         let laContext = LAContext()
         var error : NSError?
         if laContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            return laContext.biometryType == .touchID
+            let isTouchID = laContext.biometryType == .touchID
+            biometricsName = isTouchID ? "Touch ID" : "Face ID"
+            return isTouchID
         }
         return nil
     }
     
     @IBAction func callBiometriсScanner(_ sender: Any) {
         guard let biometric = isTouchIDAvailable() else { return }
+        isBiometricsEnabled = true
         let laContext = LAContext()
         laContext.localizedFallbackTitle = "Ввести ПИН-код"
         laContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: biometric ? "Приложите палец" : "Посмотрите в камеру", reply: { success, error in

@@ -10,6 +10,8 @@ import UIKit
 class ProfileVC: UIViewController {
     @IBOutlet weak var fioLabel: UILabel!
     @IBOutlet weak var infoDateLabel: UILabel!
+    @IBOutlet weak var biometricsSwitch: UISwitch!
+    @IBOutlet weak var biometricsNameLabel: UILabel!
     
     let dataProvider = ProfileDataProvider()
     
@@ -21,6 +23,8 @@ class ProfileVC: UIViewController {
     private func setupUI() {
         setupNavigationBar()
         fioLabel.text = dataProvider.getUser().name
+        biometricsSwitch.isOn = isBiometricsEnabled
+        biometricsNameLabel.text = biometricsName ?? "Биометрическая аутентификация"
     }
     
     private func setupNavigationBar() {
@@ -29,5 +33,9 @@ class ProfileVC: UIViewController {
 
     @IBAction func saveProfile(_ sender: Any) {
         
+    }
+    
+    @IBAction func switchBiometrics(_ sender: UISwitch) {
+        isBiometricsEnabled = sender.isOn
     }
 }

@@ -22,6 +22,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="CatalogOfHouses" customModuleProvider="target">
             <connections>
+                <outlet property="biometricsNameLabel" destination="Abc-sa-3dJ" id="qoe-GJ-9RL"/>
+                <outlet property="biometricsSwitch" destination="O16-RP-v4h" id="LJv-eu-Nfn"/>
                 <outlet property="fioLabel" destination="ud5-pd-VaD" id="GPe-4q-AGa"/>
                 <outlet property="infoDateLabel" destination="7B0-yb-gnb" id="cVF-oP-GlR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -224,6 +226,9 @@
                             <subviews>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O16-RP-v4h">
                                     <rect key="frame" x="317" y="7" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="switchBiometrics:" destination="-1" eventType="valueChanged" id="zvO-UT-Jge"/>
+                                    </connections>
                                 </switch>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Face ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abc-sa-3dJ">
                                     <rect key="frame" x="16" y="15.5" width="285" height="14"/>
